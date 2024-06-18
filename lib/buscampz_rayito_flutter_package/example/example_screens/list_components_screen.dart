@@ -41,7 +41,7 @@ class _Body extends StatelessWidget {
         ),
         _CustomListTile(
           title: 'Incidence Section',
-          subTitle: 'data user, text explain',
+          subTitle: 'data user, detail incidence',
           location: '/incidenceSection',
         ),
       ],

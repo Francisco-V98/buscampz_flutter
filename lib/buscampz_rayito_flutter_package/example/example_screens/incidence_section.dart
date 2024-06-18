@@ -9,7 +9,7 @@ class IncidenceSectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.bgBotLight,
-      appBar: AppBar(centerTitle: true, title: const Text('AppBar')),
+      appBar: AppBar(centerTitle: true, title: const Text('Incidence Section')),
       body: const _Body(),
     );
   }
@@ -37,8 +37,14 @@ class _Body extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(height: 24),
+          const DetailIncidence(
+            description:
+                'Hola a todos, tuve un inconveniente con la llanta, la estoy reparando y luego continúo con la ruta. Voy a llegar un poco más tarde de lo acordado. Pueden chequear la App para ver el recorrido que voy a estar haciendo.',
+          ),
         ],
       ),
     );
   }
 }
+
