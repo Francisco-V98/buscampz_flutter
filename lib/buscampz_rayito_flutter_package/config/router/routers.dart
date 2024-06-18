@@ -1,5 +1,6 @@
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/example_screens.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/list_components_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/screens.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,6 +15,10 @@ final appRouterProvider = Provider<GoRouter>(
         GoRoute(
           path: '/example',
           builder: (context, state) => const ExampleScreen(),
+        ),
+        GoRoute(
+          path: '/appbar',
+          builder: (context, state) => const AppbarScreen(),
         ),
       ],
     );

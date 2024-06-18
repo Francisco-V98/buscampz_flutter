@@ -24,6 +24,11 @@ class _Body extends StatelessWidget {
           subTitle: 'Example Screen',
           location: '/example',
         ),
+        _CustomListTile(
+          title: 'AppBar',
+          subTitle: 'Example Screen AppBar',
+          location: '/appbar',
+        ),
       ],
     );
   }
