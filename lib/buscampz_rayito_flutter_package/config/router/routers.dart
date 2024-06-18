@@ -1,3 +1,4 @@
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/elevated_button_evidencia.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/example_screens.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/list_components_screen.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/text_field_detalles_de_incidentes_screen.dart';
@@ -24,6 +25,10 @@ final appRouterProvider = Provider<GoRouter>(
         GoRoute(
           path: '/textFieldDetallesDelIncidente',
           builder: (context, state) => const TextFieldDetallesDeIncidenteScreen(),
+        ),
+        GoRoute(
+          path: '/buttonEnviarEvidencia',
+          builder: (context, state) => const ElevatedButtonEvidenciaScreen(),
         ),
       ],
     );

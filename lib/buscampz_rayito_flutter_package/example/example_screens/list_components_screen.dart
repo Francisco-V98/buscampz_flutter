@@ -34,6 +34,11 @@ class _Body extends StatelessWidget {
           subTitle: 'TextFieldDetallesDelIncidente Screen',
           location: '/textFieldDetallesDelIncidente',
         ),
+        _CustomListTile(
+          title: 'ButtonEnviarEvidencia',
+          subTitle: 'ButtonEnviarEvidencia Screen',
+          location: '/buttonEnviarEvidencia',
+        ),
       ],
     );
   }
