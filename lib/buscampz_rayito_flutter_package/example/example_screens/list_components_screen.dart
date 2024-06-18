@@ -29,6 +29,11 @@ class _Body extends StatelessWidget {
           subTitle: 'TextFieldIncidentes Screen',
           location: '/textFieldIncidentes',
         ),
+        _CustomListTile(
+          title: 'TextFieldDetallesDelIncidente',
+          subTitle: 'TextFieldDetallesDelIncidente Screen',
+          location: '/textFieldDetallesDelIncidente',
+        ),
       ],
     );
   }
