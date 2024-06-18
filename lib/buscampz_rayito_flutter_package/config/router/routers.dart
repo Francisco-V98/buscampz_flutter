@@ -20,6 +20,10 @@ final appRouterProvider = Provider<GoRouter>(
           path: '/appbar',
           builder: (context, state) => const AppbarScreen(),
         ),
+        GoRoute(
+          path: '/cardIncidence',
+          builder: (context, state) => const CardIncidenceListScreen(),
+        ),
       ],
     );
   },

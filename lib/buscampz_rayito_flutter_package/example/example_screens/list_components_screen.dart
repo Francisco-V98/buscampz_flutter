@@ -29,6 +29,11 @@ class _Body extends StatelessWidget {
           subTitle: 'Example Screen AppBar',
           location: '/appbar',
         ),
+        _CustomListTile(
+          title: 'Card Incidence',
+          subTitle: 'Example Screen Card Incidence',
+          location: '/cardIncidence',
+        ),
       ],
     );
   }
