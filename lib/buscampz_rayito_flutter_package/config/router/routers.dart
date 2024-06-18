@@ -18,10 +18,12 @@ final appRouterProvider = Provider<GoRouter>(
           builder: (context, state) => const ExampleScreen(),
         ),
         GoRoute(
-          path: '/appbar',
-          builder: (context, state) => const AppbarScreen(),
           path: '/textFieldIncidentes',
           builder: (context, state) => const TextFieldIncidentesScreen(),
+        ),
+        GoRoute(
+          path: '/appbar',
+          builder: (context, state) => const AppbarScreen(),
         ),
       ],
     );
