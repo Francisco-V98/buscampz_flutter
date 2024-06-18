@@ -28,6 +28,9 @@ class _Body extends StatelessWidget {
           title: 'AppBar',
           subTitle: 'Example Screen AppBar',
           location: '/appbar',
+          title: 'TextFieldIncidentes',
+          subTitle: 'TextFieldIncidentes Screen',
+          location: '/textFieldIncidentes',
         ),
       ],
     );
