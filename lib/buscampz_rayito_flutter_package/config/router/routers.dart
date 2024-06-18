@@ -29,6 +29,10 @@ final appRouterProvider = Provider<GoRouter>(
           path: '/cardIncidence',
           builder: (context, state) => const CardIncidenceListScreen(),
         ),
+        GoRoute(
+          path: '/incidenceSection',
+          builder: (context, state) => const IncidenceSectionScreen(),
+        ),
       ],
     );
   },

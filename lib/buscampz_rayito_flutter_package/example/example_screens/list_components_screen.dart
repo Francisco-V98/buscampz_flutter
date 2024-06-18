@@ -39,6 +39,11 @@ class _Body extends StatelessWidget {
           subTitle: 'Example Screen Card Incidence',
           location: '/cardIncidence',
         ),
+        _CustomListTile(
+          title: 'Incidence Section',
+          subTitle: 'data user, text explain',
+          location: '/incidenceSection',
+        ),
       ],
     );
   }
