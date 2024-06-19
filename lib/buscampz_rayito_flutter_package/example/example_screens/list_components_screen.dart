@@ -29,6 +29,26 @@ class _Body extends StatelessWidget {
           subTitle: 'TextFieldIncidentes Screen',
           location: '/textFieldIncidentes',
         ),
+        _CustomListTile(
+          title: 'TextFieldDetallesDelIncidente',
+          subTitle: 'TextFieldDetallesDelIncidente Screen',
+          location: '/textFieldDetallesDelIncidente',
+        ),
+        _CustomListTile(
+          title: 'ButtonEnviarEvidencia',
+          subTitle: 'ButtonEnviarEvidencia Screen',
+          location: '/buttonEnviarEvidencia',
+        ),
+        _CustomListTile(
+          title: 'CardResponseClient',
+          subTitle: 'CardResponseClient',
+          location: '/cardResponseClient',
+        ),
+        _CustomListTile(
+          title: 'TextFieldWithButtonSend',
+          subTitle: 'TextFieldWithButtonSendScreen',
+          location: '/textFieldWIthButtonSend',
+        ),
       ],
     );
   }
