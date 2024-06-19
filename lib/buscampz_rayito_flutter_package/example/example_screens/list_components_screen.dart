@@ -29,6 +29,26 @@ class _Body extends StatelessWidget {
           subTitle: 'TextFieldIncidentes Screen',
           location: '/textFieldIncidentes',
         ),
+        _CustomListTile(
+          title: 'AppBar',
+          subTitle: 'Example Screen AppBar',
+          location: '/appbar',
+        ),
+        _CustomListTile(
+          title: 'Card Incidence',
+          subTitle: 'Example Screen Card Incidence',
+          location: '/cardIncidence',
+        ),
+        _CustomListTile(
+          title: 'Incidence Section',
+          subTitle: 'data user, detail incidence',
+          location: '/incidenceSection',
+        ),
+        _CustomListTile(
+          title: 'ButtonSheet Section',
+          subTitle: 'buttom sheet and components',
+          location: '/buttomSheetSection',
+        ),
       ],
     );
   }
