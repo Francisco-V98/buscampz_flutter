@@ -10,25 +10,37 @@ class ElevatedButtonEnviarIncidencia extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 40),
+      padding: const EdgeInsets.symmetric(
+        horizontal: 40,
+      ),
       child: SizedBox(
         width: double.infinity,
         child: ElevatedButton(
           style: ButtonStyle(
-            elevation: MaterialStateProperty.all(2),
+            elevation: MaterialStateProperty.all(
+              2,
+            ),
             padding: MaterialStateProperty.all(
               const EdgeInsets.symmetric(
                 vertical: 15.0,
               ),
             ),
             textStyle: MaterialStateProperty.all(
-              const TextStyle(fontSize: 16.0),
+              const TextStyle(
+                fontSize: 16.0,
+              ),
             ),
-            backgroundColor: MaterialStateProperty.all(AppColors.primary),
-            foregroundColor: MaterialStateProperty.all(AppColors.bgBotDark),
+            backgroundColor: MaterialStateProperty.all(
+              AppColors.primary,
+            ),
+            foregroundColor: MaterialStateProperty.all(
+              AppColors.bgBotDark,
+            ),
             shape: MaterialStateProperty.all(
               RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
+                borderRadius: BorderRadius.circular(
+                  8.0,
+                ),
               ),
             ),
           ),

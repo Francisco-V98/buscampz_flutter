@@ -17,7 +17,9 @@ class TextFormFieldDetalleDeLaIncidencia extends StatelessWidget {
           color: Colors.grey,
         ),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8.0),
+          borderRadius: BorderRadius.circular(
+            8.0,
+          ),
           borderSide: BorderSide.none,
         ),
         contentPadding: const EdgeInsets.symmetric(

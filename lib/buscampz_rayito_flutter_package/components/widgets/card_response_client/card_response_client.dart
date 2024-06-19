@@ -7,12 +7,16 @@ class CardResponseClient extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10.0),
+      padding: const EdgeInsets.all(
+        10.0,
+      ),
       constraints: BoxConstraints(
         maxWidth: MediaQuery.of(context).size.width,
       ),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(
+          8.0,
+        ),
       ),
       child: const CardResponseClientContent(),
     );

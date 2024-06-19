@@ -12,24 +12,34 @@ class ElevatedButtonEvidencia extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 40),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 40,
+          ),
           child: SizedBox(
             width: double.infinity,
             child: ElevatedButton(
               style: ButtonStyle(
-                elevation: const MaterialStatePropertyAll(0),
+                elevation: const MaterialStatePropertyAll(
+                  0,
+                ),
                 padding: MaterialStateProperty.all(
                   const EdgeInsets.symmetric(
                     vertical: 15.0,
                   ),
                 ),
                 textStyle: MaterialStateProperty.all(
-                  const TextStyle(fontSize: 16.0),
+                  const TextStyle(
+                    fontSize: 16.0,
+                  ),
                 ),
-                foregroundColor: MaterialStateProperty.all(AppColors.bgBotDark),
+                foregroundColor: MaterialStateProperty.all(
+                  AppColors.bgBotDark,
+                ),
                 shape: MaterialStateProperty.all(
                   RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8.0),
+                    borderRadius: BorderRadius.circular(
+                      8.0,
+                    ),
                   ),
                 ),
               ),
