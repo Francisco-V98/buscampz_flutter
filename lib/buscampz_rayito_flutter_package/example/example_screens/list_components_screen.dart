@@ -44,6 +44,11 @@ class _Body extends StatelessWidget {
           subTitle: 'CardResponseClient',
           location: '/cardResponseClient',
         ),
+        _CustomListTile(
+          title: 'TextFieldWithButtonSend',
+          subTitle: 'TextFieldWithButtonSendScreen',
+          location: '/textFieldWIthButtonSend',
+        ),
       ],
     );
   }
