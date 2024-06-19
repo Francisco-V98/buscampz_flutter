@@ -14,7 +14,7 @@ class CardResponseClientContent extends StatelessWidget {
       children: [
         const CircleAvatar(
           radius: 20.0,
-          child: Icon(Icons.abc),
+          backgroundImage: AssetImage("assets/images/image_client.png"),
         ),
         const SizedBox(width: 10.0),
         Expanded(
