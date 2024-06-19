@@ -1,3 +1,4 @@
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/card_response_client_screen.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/elevated_button_evidencia.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/example_screens.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/list_components_screen.dart';
@@ -29,6 +30,10 @@ final appRouterProvider = Provider<GoRouter>(
         GoRoute(
           path: '/buttonEnviarEvidencia',
           builder: (context, state) => const ElevatedButtonEvidenciaScreen(),
+        ),
+        GoRoute(
+          path: '/cardResponseClient',
+          builder: (context, state) => const CardResponseClientScreen(),
         ),
       ],
     );

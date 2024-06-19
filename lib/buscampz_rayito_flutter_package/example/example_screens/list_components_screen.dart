@@ -39,6 +39,11 @@ class _Body extends StatelessWidget {
           subTitle: 'ButtonEnviarEvidencia Screen',
           location: '/buttonEnviarEvidencia',
         ),
+        _CustomListTile(
+          title: 'CardResponseClient',
+          subTitle: 'CardResponseClient',
+          location: '/cardResponseClient',
+        ),
       ],
     );
   }
