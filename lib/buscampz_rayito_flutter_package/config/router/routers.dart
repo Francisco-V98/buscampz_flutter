@@ -33,6 +33,10 @@ final appRouterProvider = Provider<GoRouter>(
           path: '/incidenceSection',
           builder: (context, state) => const IncidenceSectionScreen(),
         ),
+        GoRoute(
+          path: '/buttomSheetSection',
+          builder: (context, state) => const BottomSheetScreen(),
+        )
       ],
     );
   },
