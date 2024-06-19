@@ -1,8 +1,9 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/providers/providers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-class CardIncidenceList extends StatelessWidget {
+class CardIncidenceList extends ConsumerWidget {
   final String title;
   final String address;
   final String date;
@@ -16,15 +17,16 @@ class CardIncidenceList extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final colorTheme = ref.watch(appColorThemeProvider);
     return Container(
       height: 72,
       decoration: BoxDecoration(
-        color: AppColors.bgTopLight,
+        color: colorTheme.bgTop,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: AppColors.black.withOpacity(0.1),
+            color: colorTheme.black.withOpacity(0.1),
             blurRadius: 4,
             offset: const Offset(0, 4),
           )
@@ -44,15 +46,15 @@ class CardIncidenceList extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: AppTextStyles.sub3_14(AppColors.black),
+                style: AppTextStyles.sub3_14(colorTheme.blackVariant),
               ),
               Text(
                 address,
-                style: AppTextStyles.s1_m_12(AppColors.black.withOpacity(0.5)),
+                style: AppTextStyles.s1_m_12(colorTheme.blackVariant.withOpacity(0.5)),
               ),
               Text(
                 date,
-                style: AppTextStyles.s3_m_10(AppColors.infoLight),
+                style: AppTextStyles.s3_m_10(colorTheme.info),
               ),
             ],
           )
