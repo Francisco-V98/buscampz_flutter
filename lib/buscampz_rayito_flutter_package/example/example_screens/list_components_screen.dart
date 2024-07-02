@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/router/routers.dart';
 
 class ListComponentsScreen extends StatelessWidget {
   const ListComponentsScreen({
@@ -18,36 +19,36 @@ class _Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: const [
+      children: [
         _CustomListTile(
           title: 'Example',
           subTitle: 'Example Screen',
-          location: '/example',
+          location: AppRoutesPaths.example.path,
         ),
         _CustomListTile(
           title: 'TextFieldIncidentes',
           subTitle: 'TextFieldIncidentes Screen',
-          location: '/textFieldIncidentes',
+          location: AppRoutesPaths.textFieldIncidentes.path,
         ),
         _CustomListTile(
           title: 'AppBar',
           subTitle: 'Example Screen AppBar',
-          location: '/appbar',
+          location: AppRoutesPaths.appbar.path,
         ),
         _CustomListTile(
           title: 'Card Incidence',
           subTitle: 'Example Screen Card Incidence',
-          location: '/cardIncidence',
+          location: AppRoutesPaths.cardIncidence.path,
         ),
         _CustomListTile(
           title: 'Incidence Section',
           subTitle: 'data user, detail incidence',
-          location: '/incidenceSection',
+          location: AppRoutesPaths.incidenceSection.path,
         ),
         _CustomListTile(
           title: 'ButtonSheet Section',
           subTitle: 'buttom sheet and components',
-          location: '/buttomSheetSection',
+          location: AppRoutesPaths.bottomSheetSection.path,
         ),
       ],
     );

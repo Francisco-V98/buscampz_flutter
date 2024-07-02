@@ -1,7 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
-import 'package:flutter/material.dart';
 
 class BottomSheetScreen extends StatelessWidget {
   const BottomSheetScreen({super.key});
@@ -26,13 +26,13 @@ class _Body extends StatelessWidget {
       child: Center(
         child: Column(
           children: [
-            ButtonBottomSheet(
+            BottomSheetButton(
               icon: Icons.add_circle_outline,
               text: 'nuevo',
               onTap: () {},
             ),
             const SizedBox(height: 24),
-            const GroupButton(),
+            const ButtonGroupBottomSheet(),
             const SizedBox(height: 24),
             ElevatedButton(
               onPressed: () {
@@ -41,8 +41,7 @@ class _Body extends StatelessWidget {
                   barrierColor: AppColors.black.withOpacity(0.25),
                   isDismissible: true,
                   builder: (context) => const BottomSheetBuscampz(
-                    withTitle: true,
-                    titleBs: 'Estado de la Incidencia',
+                    title: 'Estado de la Incidencia',
                   ),
                 );
               },

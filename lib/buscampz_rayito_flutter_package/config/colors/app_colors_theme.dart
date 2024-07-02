@@ -1,5 +1,5 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
 class AppColorTheme {
   final bool isDarkMode;

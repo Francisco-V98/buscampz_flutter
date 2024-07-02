@@ -1,25 +1,25 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 
-class GroupButton extends StatelessWidget {
-  const GroupButton({super.key});
+class ButtonGroupBottomSheet extends StatelessWidget {
+  const ButtonGroupBottomSheet({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        ButtonBottomSheet(
+        BottomSheetButton(
           icon: Icons.sync_rounded,
           text: 'En Proceso',
           onTap: () {},
         ),
-        ButtonBottomSheet(
+        BottomSheetButton(
           icon: Icons.check_circle_outline_rounded,
           text: 'Resuelto',
           onTap: () {},
         ),
-        ButtonBottomSheet(
+        BottomSheetButton(
           icon: Icons.add_circle_outline,
           text: 'nuevo',
           onTap: () {},

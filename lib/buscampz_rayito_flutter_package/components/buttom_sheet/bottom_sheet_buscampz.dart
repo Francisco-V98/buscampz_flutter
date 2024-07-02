@@ -1,15 +1,13 @@
+import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
-import 'package:flutter/material.dart';
 
 class BottomSheetBuscampz extends StatelessWidget {
-  final bool withTitle;
-  final String titleBs;
+  final String? title;
   const BottomSheetBuscampz({
     super.key,
-    this.withTitle = false,
-    this.titleBs = 'Title Here',
+    this.title,
   });
 
   @override
@@ -40,18 +38,17 @@ class BottomSheetBuscampz extends StatelessWidget {
               ),
             ),
           ),
-          withTitle
-              ? Padding(
-                  padding: const EdgeInsets.only(top: 12),
-                  child: Text(
-                    titleBs,
-                    style: AppTextStyles.sub1_18(AppColors.black),
-                  ),
-                )
-              : const SizedBox.shrink(),
+          if (title != null)
+            Padding(
+              padding: const EdgeInsets.only(top: 12),
+              child: Text(
+                title!,
+                style: AppTextStyles.sub1_18(AppColors.black),
+              ),
+            ),
           const Padding(
             padding: EdgeInsets.symmetric(vertical: 24),
-            child: GroupButton(),
+            child: ButtonGroupBottomSheet(),
           ),
         ],
       ),

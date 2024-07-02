@@ -1,45 +1,37 @@
+import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
-import 'package:flutter/material.dart';
 
 class AppBarBuscampz extends StatelessWidget {
-  final bool withBackground;
-  final bool withIconRight;
-  final IconData iconRight;
-  final bool withIconLeft;
-  final IconData iconLeft;
+  final Color? background;
   final String title;
-  // final String image;
+  final IconData? iconRight;
+  final IconData? iconLeft;
+
   const AppBarBuscampz({
     super.key,
-    this.withBackground = true,
+    this.background,
     required this.title,
-    // required this.image,
-    this.withIconRight = true,
-    this.withIconLeft = true,
-    this.iconRight = Icons.menu_rounded,
-    this.iconLeft = Icons.menu_rounded,
+    this.iconRight,
+    this.iconLeft,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 48,
-      color: withBackground ? AppColors.bgTopLight : Colors.transparent,
+      color: background ?? Colors.transparent,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            withIconLeft
-                ? _IconAppBar(iconLeft)
+            iconLeft != null
+                ? _IconAppBar(iconLeft!)
                 : const SizedBox(height: 48, width: 48),
-            Text(
-              title,
-              style: AppTextStyles.h4_20(AppColors.black)
-            ),
-            withIconRight
-                ? _IconAppBar(iconRight)
+            Text(title, style: AppTextStyles.h4_20(AppColors.black)),
+            iconRight != null
+                ? _IconAppBar(iconRight!)
                 : const SizedBox(height: 48, width: 48),
           ],
         ),
@@ -65,19 +57,20 @@ class _IconAppBar extends StatelessWidget {
   }
 }
 
-class CircleWithImageAndBorder extends StatelessWidget {
+class CircleImageAppBar extends StatelessWidget {
   final String image;
 
-  const CircleWithImageAndBorder({
+  const CircleImageAppBar({
     super.key,
     required this.image,
   });
 
   @override
   Widget build(BuildContext context) {
+    const double sizeCircleImage = 32;
     return Container(
-      width: 32,
-      height: 32,
+      width: sizeCircleImage,
+      height: sizeCircleImage,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         image: DecorationImage(
@@ -92,3 +85,92 @@ class CircleWithImageAndBorder extends StatelessWidget {
     );
   }
 }
+
+
+
+// class AppBarBuscampz extends StatelessWidget {
+//   final bool withBackground;
+//   final String title;
+//   final bool withIconRight;
+//   final IconData iconRight;
+//   final bool withIconLeft;
+//   final IconData iconLeft;
+//   const AppBarBuscampz({
+//     super.key,
+//     this.withBackground = true,
+//     required this.title,
+//     this.withIconRight = true,
+//     this.iconRight = Icons.menu_rounded,
+//     this.withIconLeft = true,
+//     this.iconLeft = Icons.menu_rounded,
+//   });
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       height: 48,
+//       color: withBackground ? AppColors.bgTopLight : Colors.transparent,
+//       child: Padding(
+//         padding: const EdgeInsets.symmetric(horizontal: 16),
+//         child: Row(
+//           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//           children: [
+//             withIconLeft
+//                 ? _IconAppBar(iconLeft)
+//                 : const SizedBox(height: 48, width: 48),
+//             Text(title, style: AppTextStyles.h4_20(AppColors.black)),
+//             withIconRight
+//                 ? _IconAppBar(iconRight)
+//                 : const SizedBox(height: 48, width: 48),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+// class _IconAppBar extends StatelessWidget {
+//   final IconData icon;
+//   const _IconAppBar(this.icon);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return SizedBox(
+//       height: 48,
+//       width: 48,
+//       child: Icon(
+//         icon,
+//         color: AppColors.black,
+//       ),
+//     );
+//   }
+// }
+
+// class CircleImageAppBar extends StatelessWidget {
+//   final String image;
+
+//   const CircleImageAppBar({
+//     super.key,
+//     required this.image,
+//   });
+
+//   @override
+//   Widget build(BuildContext context) {
+//     const double sizeCircleImage = 32;
+//     return Container(
+//       width: sizeCircleImage,
+//       height: sizeCircleImage,
+//       decoration: BoxDecoration(
+//         shape: BoxShape.circle,
+//         image: DecorationImage(
+//           image: AssetImage(image),
+//           fit: BoxFit.cover,
+//         ),
+//         border: Border.all(
+//           color: AppColors.black,
+//           width: 2,
+//         ),
+//       ),
+//     );
+//   }
+// }

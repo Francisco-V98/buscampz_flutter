@@ -1,7 +1,7 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/providers/providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/providers/providers.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
 class CardIncidenceList extends ConsumerWidget {
   final String title;
@@ -29,7 +29,7 @@ class CardIncidenceList extends ConsumerWidget {
             color: colorTheme.black.withOpacity(0.1),
             blurRadius: 4,
             offset: const Offset(0, 4),
-          )
+          ),
         ],
       ),
       child: Row(
