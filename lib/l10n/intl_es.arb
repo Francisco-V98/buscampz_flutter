@@ -1,0 +1,345 @@
+{
+  "_locale": "es",
+  "loginLabel": "Iniciar sesión",
+  "@loginLabel": {
+    "description": "localizable of Iniciar sesión"
+  },
+  "loginEmailField": "Correo electrónico",
+  "@loginEmailField": {
+    "description": "localizable of Correo electrónico"
+  },
+  "loginPasswordField": "Contraseña",
+  "@loginPasswordField": {
+    "description": "localizable of Contraseña"
+  },
+  "loginButton": "Iniciar sesión",
+  "@loginButton": {
+    "description": "localizable of Iniciar sesión"
+  },
+  "loginForgotPasswordButton": "¿Olvidaste tu contraseña?",
+  "@loginForgotPasswordButton": {
+    "description": "localizable of ¿Olvidaste tu contraseña?"
+  },
+  "loginDontHaveAccountLabel": "¿No tienes una cuenta?",
+  "@loginDontHaveAccountLabel": {
+    "description": "localizable of ¿No tienes una cuenta?"
+  },
+  "loginDontHaveAccountButton": "Regístrate",
+  "@loginDontHaveAccountButton": {
+    "description": "localizable of Regístrate"
+  },
+  "registerLabel": "Crear Cuenta",
+  "@registerLabel": {
+    "description": "localizable of Crear Cuenta"
+  },
+  "registerNamesField": "Nombres",
+  "@registerNamesField": {
+    "description": "localizable of Nombres"
+  },
+  "registerLastNamesField": "Apellidos",
+  "@registerLastNamesField": {
+    "description": "localizable of Apellidos"
+  },
+  "registerEmailField": "Correo electrónico",
+  "@registerEmailField": {
+    "description": "localizable of Correo electrónico"
+  },
+  "registerPasswordField": "Contraseña",
+  "@registerPasswordField": {
+    "description": "localizable of Contraseña"
+  },
+  "registerTermsAndConditionsLabel": "Aceptar los",
+  "@registerTermsAndConditionsLabel": {
+    "description": "localizable of Aceptar los términos y condiciones"
+  },
+  "registerTermsAndConditionsButton": "Términos y Condiciones",
+  "@registerTermsAndConditionsButton": {
+    "description": "localizable of Aceptar los términos y condiciones"
+  },
+  "registerButton": "Registrarse",
+  "@registerButton": {
+    "description": "localizable of Registrarse"
+  },
+  "registerHaveAccountLabel": "Si ya tienes tu cuenta,",
+  "@registerHaveAccountLabel": {
+    "description": "localizable of Si ya tienes tu cuenta,"
+  },
+  "registerHaveAccountButton": "inicia sesión",
+  "@registerHaveAccountButton": {
+    "description": "localizable of inicia sesión"
+  },
+  "forgotPasswordLabel": "Restablecer contraseña",
+  "@forgotPasswordLabel": {
+    "description": "localizable of Restablecer contraseña"
+  },
+  "forgotPasswordDescriptionLabel": "Ingrese su dirección de correo electrónico para recibir un código de verificación.",
+  "@forgotPasswordDescriptionLabel": {
+    "description": "localizable of Ingrese su dirección de correo electrónico para recibir un código de verificación."
+  },
+  "forgotPasswordEmailField": "Correo electrónico",
+  "@forgotPasswordEmailField": {
+    "description": "localizable of Correo electrónico"
+  },
+  "forgotPasswordButton": "Enviar correo electrónico",
+  "@forgotPasswordButton": {
+    "description": "localizable of Enviar correo electrónico"
+  },
+  "validateCodeLabel": "Validar código",
+  "@validateCodeLabel": {
+    "description": "localizable of Validar código"
+  },
+  "validateCodeDescriptionLabel": "Ingrese el código de 4 dígitos enviado a: {email}",
+  "@validateCodeDescriptionLabel": {
+    "description": "localizable of Ingrese el código de 4 dígitos enviado a: ejemplo@buscame.com",
+    "placeholders": {
+      "email": {
+        "type": "String",
+        "example": "ejemplo@buscame.com"
+      }
+    }
+  },
+  "validateCodeResentCodeButton": "Reenviar código",
+  "@validateCodeResentCodeButton": {
+    "description": "localizable of Reenviar código"
+  },
+  "validateCodeButton": "Validar código",
+  "@validateCodeButton": {
+    "description": "localizable of Validar código"
+  },
+  "changePasswordLabel": "Nueva contraseña",
+  "@changePasswordLabel": {
+    "description": "localizable of Nueva contraseña"
+  },
+  "changePasswordDescriptionLabel": "Introduce tu nueva contraseña para realizar el cambio.",
+  "@changePasswordDescriptionLabel": {
+    "description": "localizable of Introduce tu nueva contraseña para realizar el cambio."
+  },
+  "changePasswordField": "Nueva contraseña",
+  "@changePasswordField": {
+    "description": "localizable of Nueva contraseña"
+  },
+  "changePasswordButton": "Guardar",
+  "@changePasswordButton": {
+    "description": "localizable of Guardar"
+  },
+  "securePasswordOptionTitle": "Tu contraseña necesita:",
+  "@securePasswordOptionTitle": {
+    "description": "localizable of Tu contraseña necesita:"
+  },
+  "securePasswordOptionWeak": "Débil",
+  "@securePasswordOptionWeak": {
+    "description": "localizable of Débil"
+  },
+  "securePasswordOptionMinLetter": "Al menos 8 caracteres",
+  "@securePasswordOptionMinLetter": {
+    "description": "localizable of Al menos 8 caracteres"
+  },
+  "securePasswordOptionNumberAndSymbol": "Números o símbolos",
+  "@securePasswordOptionNumberAndSymbol": {
+    "description": "localizable of Números o símbolos"
+  },
+  "securePasswordOptionUpperAndLowerCase": "mayúsculas y minúsculas",
+  "@securePasswordOptionUpperAndLowerCase": {
+    "description": "localizable of mayúsculas y minúsculas"
+  },
+  "greetingUser": "Hola",
+  "@greetingUser": {
+      "description": "localizable saludos del usuario en el home."
+  },
+  "regexDisplayErrorEmpty": "El campo es requerido",
+  "@regexDisplayErrorEmpty": {
+      "description": "localizable error cuando no ingrasas un dato"
+  },
+  "regexDisplayErrorMinLength": "Mínimo {lenght} caracteres",
+  "@regexDisplayErrorMinLength": {
+      "description": "localizable error cuando no ingresas un valor minimo",
+      "placeholders": {
+        "lenght": {
+          "type": "String",
+          "example": "6"
+        }
+      }
+  },
+  "regexDisplayErrorMaxLength": "Maximo {lenght} caracteres",
+  "@regexDisplayErrorMaxLength": {
+      "description": "localizable error cuando sobrepasas el valor maximo",
+      "placeholders": {
+        "lenght": {
+          "type": "String",
+          "example": "100"
+        }
+      }
+  },
+  "regexDisplayErrorFormatAlphabetical": "El formato alfabetico no es valido",
+  "@regexDisplayErrorFormatAlphabetical": {
+      "description": "localizable error del regex Alphabetical"
+  },
+  "regexDisplayErrorFormatAlphanumeric": "El formato de alfanumerico no es valido",
+  "@regexDisplayErrorFormatAlphanumeric": {
+      "description": "localizable error del regex Alphanumeric"
+  },
+  "regexDisplayErrorFormatDecimal": "El formato de numero decimal no es valido",
+  "@regexDisplayErrorFormatDecimal": {
+      "description": "localizable error del regex Decimal"
+  },
+  "regexDisplayErrorFormatEmail": "El formato de correo electronico no es valido",
+  "@regexDisplayErrorFormatEmail": {
+      "description": "localizable error del regex Email"
+  },
+  "regexDisplayErrorFormatInteger": "El formato de numero entero no es valido",
+  "@regexDisplayErrorFormatInteger": {
+      "description": "localizable error del regex Integer"
+  },
+  "regexDisplayErrorFormatPassword": "El formato de contrasena no es valido",
+  "@regexDisplayErrorFormatPassword": {
+      "description": "localizable error del regexPassword"
+  },
+  "regexDisplayErrorFormatPhone": "El formato de telefono celular no es valido",
+  "@regexDisplayErrorFormatPhone": {
+      "description": "localizable error del regex Phone"
+  },
+  "homeLabel": "Inicio",
+  "@homeLabel": {
+    "description": "localizable of home"
+  },
+  "vehiclesLabel": "Vehículo",
+  "@vehiclesLabel": {
+    "description": "localizable of vehicle"
+  },
+  "settingsLabel": "Ajustes",
+  "@settingsLabel": {
+    "description": "localizable of settings"
+  },
+  "passengersLabel": "Hijos",
+  "@passengersLabel": {
+    "description": "localizable of passengers"
+  },
+  "supportLabel": "Soporte",
+  "@supportLabel": {
+    "description": "localizable of support"
+  },
+  "supportDescriptionLabel": "Para Cualquier duda, queja o inquietud, nos puedes contactar a través de los siguientes medios:",
+  "@supportDescriptionLabel": {
+    "description": "localizable of support description"
+  },
+  "frecuentQuestionsLabel": "Preguntas Frecuentes",
+  "@frecuentQuestionsLabel": {
+    "description": "localizable of frecuent questions"
+  },
+  "termsAndConditionsLabel": "Términos y Condiciones",
+  "@termsAndConditionsLabel": {
+    "description": "localizable of terms and conditions"
+  },
+  "aboutUsLabel": "Acerca de",
+  "@aboutUsLabel": {
+    "description": "localizable of about"
+  },
+  "aboutUsReviewAppTitle": "¿Te gusta nuestra app?",
+  "@aboutUsReviewAppTitle": {
+    "description": "localizable of about Review App Title"
+  },
+  "aboutUsReviewAppDescription": "Si te gusta nuestra app, nos encantaría que nos dejaras una reseña. Esto nos ayuda a mejorar y a llegar a más personas.",
+  "@aboutUsReviewAppDescription": {
+    "description": "localizable of about Review App Description"
+  },
+  "aboutUsReviewAppButton": "Dejar una Reseña",
+  "@aboutUsReviewAppButton": {
+    "description": "localizable of about Review App Button"
+  },
+  "aboutUsReviewAppVersionTitle": "App Versión",
+  "@aboutUsReviewAppVersionTitle": {
+    "description": "localizable of about"
+  },
+  "profileTitle": "Perfil",
+    "@profileLabel": {
+    "description": "localizable of Perfil"
+  },
+  "profileSaveButton": "Guardar",
+    "@profileSaveButton": {
+    "description": "localizable of Guardar"
+  },
+  "profileNamesField": "Nombres",
+    "@registerNamesField": {
+    "description": "localizable of Nombres"
+  },
+  "profileLastNamesField": "Apellidos",
+    "@profileLastNamesField": {
+    "description": "localizable of Apellidos"
+  },
+  "profileEmailField": "Correo electrónico",
+    "@profileEmailField": {
+    "description": "localizable of Correo electrónico"
+  },
+  "profileAddressField": "Dirección",
+    "@profileEmailField": {
+    "description": "localizable of Dirección"
+  },
+  "profilePhoneNumberField": "Número de teléfono",
+    "@profilePhoneNumberField": {
+    "description": "localizable of Número de teléfono"
+  },
+  "profileYearOfBirthField": "Año de nacimiento",
+    "@profileYearOfBirthField": {
+    "description": "localizable of Año de nacimiento"
+  },
+  "profileGenderField": "Genero",
+    "@profileGenderField": {
+    "description": "localizable of Genero"
+  },
+  "profileModalExitTitle": "Hubo Cambios",
+    "@profileModalExitTitle": {
+    "description": "localizable of Hubo Cambios"
+  },
+  "profileModalExitSubtitle": "Se han detectado cambios. ¿Desea guardarlos o deshacerlo?",
+    "@profileModalExitSubtitle": {
+    "description": "localizable of Se han detectado cambios. ¿Desea guardarlos o deshacerlo?"
+  },
+  "profileModalExitPrimaryAction": "Guardar",
+    "@profileModalExitPrimaryAction": {
+    "description": "localizable of Guardar"
+  },
+  "profileModalExitSecondaryAction": "Deshacer",
+    "@profileModalExitSecondaryAction": {
+    "description": "localizable of Deshacer"
+  },
+  "profileModalChangePhotoLeftOption": "Galeria",
+    "@profileModalChangePhotoLeftOption": {
+    "description": "localizable of Galeria"
+  },
+  "profileModalChangePhotoRightOption": "Tomar Foto",
+    "@profileModalChangePhotoRightOption": {
+    "description": "localizable of Tomar Foto"
+  },
+  "profileModalChangePhotoPrimaryAction": "Actualizar",
+    "@profileModalChangePhotoPrimaryAction": {
+    "description": "localizable of Actualizar"
+  },
+  "profileModalChangePhotoSecondaryAction": "Cancelar",
+    "@profileModalChangePhotoSecondaryAction": {
+    "description": "localizable of Cancelar"
+  },
+  "menuOptionLogoutLabel": "Cerrar Sesión",
+  "@menuOptionLogoutLabel": {
+    "description": "localizable of Logout Button"
+  },
+  "menuOptionDarkModeLabel": "Modo Nocturno",
+  "@menuOptionLogoutLabel": {
+    "description": "localizable of Dak Mode Sitwch"
+  },
+  "menuOptionLogoutModalPrimaryButton": "Cancelar",
+  "@menuOptionLogoutModalPrimaryButton": {
+    "description": "localizable of Logout Primary Button"
+  },
+  "menuOptionLogoutModalSecondayButton": "Cerrar Sesión",
+  "@menuOptionLogoutModalSecondayButton": {
+    "description": "localizable of Logout Modal Secondary Button"
+  },
+  "menuOptionLogoutModalDesciption": "¿Estás seguro de que quieres cerrar sesión?",
+  "@menuOptionLogoutModalDesciption": {
+    "description": "localizable of Logout Modal Description"
+  },
+  "menuOptionLogoutModalTitle": "Cerrar Sesión",
+  "@menuOptionLogoutModalTitle": {
+    "description": "localizable of Logout Modal Title"
+  }
+}

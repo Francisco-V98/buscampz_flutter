@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-
-class TextFormFieldDetalleDeLaIncidencia extends StatelessWidget {
-  const TextFormFieldDetalleDeLaIncidencia({
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
+//Change name of the class Spanish to English
+class DetailIncidentTextFieldContent extends StatelessWidget {
+  const DetailIncidentTextFieldContent({
     super.key,
   });
 
@@ -14,7 +15,7 @@ class TextFormFieldDetalleDeLaIncidencia extends StatelessWidget {
         fillColor: Colors.white,
         hintText: "Escribir...",
         hintStyle: const TextStyle(
-          color: Colors.grey,
+          color: AppColors.greyLight,
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(

@@ -1,5 +1,5 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
 class ButtonSendContent extends StatelessWidget {
   const ButtonSendContent({
@@ -16,7 +16,7 @@ class ButtonSendContent extends StatelessWidget {
           BoxShadow(
             blurRadius: 4,
             offset: Offset(0, 4),
-            color: Color.fromARGB(255, 185, 190, 194)
+            color: Color.fromARGB(255, 185, 190, 194),
           ),
         ],
         color: AppColors.primary,

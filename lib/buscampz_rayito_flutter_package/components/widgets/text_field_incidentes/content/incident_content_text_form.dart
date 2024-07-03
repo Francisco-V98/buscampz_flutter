@@ -1,8 +1,8 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
-
-class TextFormFieldIncidentesContent extends StatelessWidget {
-  const TextFormFieldIncidentesContent({
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
+//Change name of the class Spanish to English
+class IncidentContentTextField extends StatelessWidget {
+  const IncidentContentTextField({
     super.key,
   });
 

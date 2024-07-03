@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
-import 'package:flutter/material.dart';
-
-class ElevatedButtonEnviarIncidencia extends StatelessWidget {
-  const ElevatedButtonEnviarIncidencia({
+//Change name of the class Spanish to English
+class SendEvidenceElevatedButton extends StatelessWidget {
+  const SendEvidenceElevatedButton({
     super.key,
   });
 
@@ -30,9 +30,6 @@ class ElevatedButtonEnviarIncidencia extends StatelessWidget {
                 fontSize: 16.0,
               ),
             ),
-            backgroundColor: MaterialStateProperty.all(
-              AppColors.primary,
-            ),
             foregroundColor: MaterialStateProperty.all(
               AppColors.bgBotDark,
             ),
@@ -42,6 +39,9 @@ class ElevatedButtonEnviarIncidencia extends StatelessWidget {
                   8.0,
                 ),
               ),
+            ),
+            backgroundColor: MaterialStateProperty.all(
+              AppColors.primary,
             ),
           ),
           onPressed: () {},

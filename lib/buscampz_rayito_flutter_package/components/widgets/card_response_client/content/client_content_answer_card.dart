@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
-import 'package:flutter/material.dart';
 
-class CardResponseClientContent extends StatelessWidget {
-  const CardResponseClientContent({
+class ClientContentAnswerCard extends StatelessWidget {
+  const ClientContentAnswerCard({
     super.key,
   });
 
@@ -14,7 +14,9 @@ class CardResponseClientContent extends StatelessWidget {
       children: [
         const CircleAvatar(
           radius: 20.0,
-          backgroundImage: AssetImage("assets/images/image_client.png"),
+          backgroundImage: AssetImage(
+            "assets/images/image_client_example.png",
+          ),
         ),
         const SizedBox(width: 10.0),
         Expanded(

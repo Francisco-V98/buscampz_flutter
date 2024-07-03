@@ -1,10 +1,11 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/text_field_incidentes/content/text_form_field__detalles_incidentes.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/text_field_incidentes/content/detail_incident_text_form_content.dart';
 
-class TextFieldDetallesDelIncidente extends StatelessWidget {
-  const TextFieldDetallesDelIncidente({super.key});
+//Change name of the class Spanish to English
+class DetailIncidentTextField extends StatelessWidget {
+  const DetailIncidentTextField({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class TextFieldDetallesDelIncidente extends StatelessWidget {
               const SizedBox(
                 height: 8,
               ),
-              const TextFormFieldDetalleDeLaIncidencia(),
+              const DetailIncidentTextFieldContent(),
             ],
           ),
         ),

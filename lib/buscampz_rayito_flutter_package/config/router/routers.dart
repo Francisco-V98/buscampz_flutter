@@ -1,12 +1,12 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/card_response_client_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/elevated_button_evidencia.dart';
+import 'package:go_router/go_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/client_answer_card_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/evidence_elevated_button_screen.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/example_screens.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/list_components_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/text_field_detalles_de_incidentes_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/text_field_incidentes_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/detail_incident_text_field_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/incidents_text_field_screen.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/textfield_with_button_send_screen.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 
 final appRouterProvider = Provider<GoRouter>(
   (ref) {
@@ -21,23 +21,23 @@ final appRouterProvider = Provider<GoRouter>(
           builder: (context, state) => const ExampleScreen(),
         ),
         GoRoute(
-          path: '/textFieldIncidentes',
-          builder: (context, state) => const TextFieldIncidentesScreen(),
+          path: '/incidentTextField',
+          builder: (context, state) => const IncidentsTextFieldScreen(),
         ),
         GoRoute(
-          path: '/textFieldDetallesDelIncidente',
-          builder: (context, state) => const TextFieldDetallesDeIncidenteScreen(),
+          path: '/detailIncidenceTextForm',
+          builder: (context, state) => const DetailIncidentTextFieldScreen(),
         ),
         GoRoute(
-          path: '/buttonEnviarEvidencia',
-          builder: (context, state) => const ElevatedButtonEvidenciaScreen(),
+          path: '/sendEvidenceButton',
+          builder: (context, state) => const EvidenceElevatedButtonScreen(),
         ),
         GoRoute(
-          path: '/cardResponseClient',
-          builder: (context, state) => const CardResponseClientScreen(),
+          path: '/responseClientCard',
+          builder: (context, state) => const ClientAnswerCardScreen(),
         ),
         GoRoute(
-          path: '/textFieldWIthButtonSend',
+          path: '/buttonSendTextField',
           builder: (context, state) => const TextFieldWithButtonSendScreen(),
         ),
       ],

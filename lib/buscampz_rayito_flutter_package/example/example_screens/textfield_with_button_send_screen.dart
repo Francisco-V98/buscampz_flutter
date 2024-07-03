@@ -1,6 +1,6 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/textfield_with_button_send/textfield_with_button_send.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/textfield_with_button_send/button_send_with_text_field.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
 class TextFieldWithButtonSendScreen extends StatelessWidget {
   const TextFieldWithButtonSendScreen({super.key});
@@ -9,8 +9,10 @@ class TextFieldWithButtonSendScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.bgBotLight,
-      appBar: AppBar(),
-      body: const TextFieldWithButtonSend(),
+      appBar: AppBar(
+        title: const Text("TextField With ButtonSendScreen"),
+      ),
+      body: const ButtonSendWithTextField(),
     );
   }
 }
