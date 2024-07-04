@@ -1,6 +1,13 @@
 # Rayito Repository
 
-Este repositorio contiene diferentes componentes para hacer tres pantallas de la aplicación buscampz. 
+This README drescribes the packageñ. If you publish this package to pub.dev, this README's contents appear on the landing page for your package.
+
+For information about how to write a good package radme, see the guide for [writing package pages] (https://dart.dev/guides/libraries/writing-package-pages).
+
+For general information about develping packages, see the dart guide for [developing packages and plugins] (https://flutter.dev/developing-packages).
+-->
+
+TODO: put a short description fo the package here that helps potential users know whether this package might be useful for them. 
 
 ## Tabla de Contenidos
 
@@ -38,20 +45,17 @@ Aquí se explica cómo integrar y usar uno de los widgets en tu aplicación de F
 1. Importa el widget en el archivo donde lo vas a utilizar:
     ```dart
    import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/elevatedButtonEvidencia/elevated_button_evidence.dart';
-
     ```
 
 2. Utiliza el widget en tu código:
     ```dart
-    ElevatedButtonEvidencia(),
+    EvidenceElevatedButton(),
     ```
 
 ## Widgets Disponibles
-### ElevatedButtonEvidencia
+### ListComponentsScreen
 
-Un botón elevado que incluye un texto encima. Util para enviar incidencias con una imagen adjunta.
-
-![ElevatedButtonEvidencia](elevatedbuttonevidence.png)
+Un listado con las localizaciones, títulos, y subtítulos de las pantallas para acceder a los widgets en una vista previa.
 
 **Propiedades:**
 - `tittle`: Título del widget o de la pantalla
@@ -74,46 +78,124 @@ _CustomListTile(
 
 Un botón elevado que incluye un texto encima. Util para enviar incidencias con una imagen adjunta.
 
-![ElevatedButtonEvidencia](elevatedbuttonevidence.png)
-
 **Propiedades:**
 - `onPressed`: Función que se ejecuta al presionar el botón.
 
 **Ejemplo:**
+Botón tipo `SendEvidenceButton`
+ButtonWithoutColor | Botton With Color | 
+-----|-------| 
+<img src="https://github.com/Francisco-V98/buscampz_flutter/assets/156206996/c3b38c5d-9d53-48ae-9ae1-5e951b3d3b01" width="308"/> | <img src="https://github.com/Francisco-V98/buscampz_flutter/assets/156206996/03d1c52c-d3a5-4c03-b825-5b0472aa8bc3" width="308"/> |
+**With Color**
 ```dart
-ElevatedButtonEvidencia(
-  onPressed: () {
-    // Acción al presionar el botón
-  },
-),
+backgroundColor: MaterialStateProperty.all(
+              AppColors.primary,
+            ),
+          ),
+          onPressed: () {},
+          child: Text(
+            'Enviar Incidencia',
+            style: AppTextStyles.btn_16(
+              AppColors.bgBotDark,
+            ),
+          ),
 ```
-### CardResponseClient
+**Without color**
+```dart
+foregroundColor: WidgetStateProperty.all(
+          AppColors.bgBotDark,
+        ),
+      ),
+      onPressed: () {},
+      child: Text(
+        'Adjuntar Foto',
+        style: AppTextStyles.btn_16(
+          AppColors.bgBotDark,
+        ),
+```
+### ClientAnswer
 
 Una carta que contiene la respuesta del cliente según lo escrito por el driver
 
-![CardResponseClient](elevatedbuttonevidence.png)
+ClientAnswer | CardDefault | 
+--
+<img src="https://github.com/Francisco-V98/buscampz_flutter/assets/156206996/b8af871d-4853-4d55-a830-0b692384644f" width="308"/> 
 
 **Propiedades:**
-- `CardResponseClient`: Nombre del widget
+- `ClientAnswer`: Nombre del widget
 
 **Ejemplo:**
 ```dart
-Center(
-                child: CardResponseClient(),
+ Center(
+                child: ClientAnswerCard(),
               ),
 ```
-### TextFieldIncidentes
+### IncidentTextField-DetailIncident
 
-Un TextFormField donde escribes el incidente
+Dos TextFormField donde escribes brevemente un incidente, y otro donde describes detalladamente un incidente.
 
-![TextFieldIncidentes](elevatedbuttonevidence.png)
+| IncidentTextField | DetailIncident |
+| ----------------- | -------------- |
+| <img src="https://github.com/Francisco-V98/buscampz_flutter/assets/156206996/241ab410-0b25-4db1-92e7-0bb823041c67" width="308"/> | <img src="https://github.com/Francisco-V98/buscampz_flutter/assets/156206996/2155bcc7-75fd-4bbf-8a9c-f8935c8d3727" width="308"/> |
+
 
 **Propiedades:**
-- `TextFieldIncidentes`: Nombre del widget
+- `DetailIncidentTextField`: TextFormField donde se describe el accidente
 
 **Ejemplo:**
 ```dart
-Center(
-          child: TextFieldIncidentes(),
+  return TextFormField(
+      maxLines: 1,
+      decoration: InputDecoration(
+        contentPadding: const EdgeInsets.symmetric(
+          vertical: 90.0,
+          horizontal: 20.0,
         ),
+```
+- `IncidentTextField`: TextFormField donde se escribe brevemente el accidente
+
+**Ejemplo:**
+```dart
+return TextFormField(
+      decoration: InputDecoration(
+        filled: true,
+        fillColor: Colors.white,
+        hintText: "Elegir...",
+        hintStyle: const TextStyle(
+          fontWeight: FontWeight.bold,
+          color: Colors.grey,
+        ), //Without EdgeInsets
+```
+
+
+### SendContentTextField-ButtonSendContent
+
+Un TextFormField que donde escribes y después se conjuga con el ButtonSendContent, ambos vienen dentro del Widget ButtonSendWithTextField
+
+| WithButtonSendContent | WithoutButtonSendContent |
+| ----------------- | -------------- |
+| <img src="https://github.com/Francisco-V98/buscampz_flutter/assets/156206996/16a130f8-d3ea-4e44-b90d-28bfaaccb107" width="308"/> | <img src="https://github.com/Francisco-V98/buscampz_flutter/assets/156206996/0916d6f2-2893-44aa-b0b5-03173a967aaf" width="308"/> |
+
+
+**Propiedades:**
+- `ButtonSendWithTextField`: TextFormField donde se escribe, junto con el botón de enviar
+
+**Ejemplo:**
+```dart
+   Row(
+          children: [
+            SendContentTextField(),
+            ButtonSendContent(),
+          ],
+   ),//Both in a row
+```
+- `TextField Without Button Send`: TextFormField donde se escribe, sin el botón de enviar, individualmente.
+
+**Ejemplo:**
+```dart
+return Column(
+    children: [
+        SendContentTextField(),
+    ],
+)//Example Without the Row
 ```
