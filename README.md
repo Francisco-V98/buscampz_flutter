@@ -7,7 +7,7 @@ For information about how to write a good package radme, see the guide for [writ
 For general information about develping packages, see the dart guide for [developing packages and plugins] (https://flutter.dev/developing-packages).
 -->
 
-TODO: put a short description fo the package here that helps potential users know whether this package might be useful for them. 
+TODO: put the widgets in dark 
 
 ## Tabla de Contenidos
 
