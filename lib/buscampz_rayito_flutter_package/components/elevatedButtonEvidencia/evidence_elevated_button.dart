@@ -17,16 +17,18 @@ class EvidenceElevatedButtons extends StatelessWidget {
           ),
           child: SizedBox(
             width: double.infinity,
-            child: AttachPhotoButton(),
+            child: AttachPhotoButton(
+              text: "Adjuntar Foto",
+            ),
           ),
         ),
         SizedBox(
           height: 19.0,
         ),
-        SendEvidenceElevatedButton(),
+        SendEvidenceElevatedButton(
+          text: "Enviar Incidencia",
+        ),
       ],
     );
   }
 }
-
-

@@ -70,6 +70,11 @@ class _Body extends StatelessWidget {
           subTitle: 'buttom sheet and components',
           location: AppRoutesPaths.bottomSheetSection.path,
         ),
+        _CustomListTile(
+          title: 'IncidenceSectionScreen',
+          subTitle: 'Incidence Section Screen',
+          location: AppRoutesPaths.incidenceCreateScreen.path,
+        ),
       ],
     );
   }

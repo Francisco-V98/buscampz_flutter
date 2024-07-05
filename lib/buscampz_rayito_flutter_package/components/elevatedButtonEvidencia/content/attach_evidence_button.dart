@@ -3,8 +3,10 @@ import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_sty
 import 'package:flutter/material.dart';
 
 class AttachPhotoButton extends StatelessWidget {
+  final String text;
   const AttachPhotoButton({
     super.key,
+    required this.text,
   });
 
   @override
@@ -37,7 +39,7 @@ class AttachPhotoButton extends StatelessWidget {
       ),
       onPressed: () {},
       child: Text(
-        'Adjuntar Foto',
+        text,
         style: AppTextStyles.btn_16(
           AppColors.bgBotDark,
         ),
