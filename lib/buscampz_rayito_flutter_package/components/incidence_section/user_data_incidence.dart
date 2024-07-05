@@ -3,7 +3,7 @@ import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/a
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
 class UserDataIncidence extends StatelessWidget {
-  final String image;
+  final String? image;
   final String title;
   final String address;
   final String route;
@@ -17,6 +17,9 @@ class UserDataIncidence extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const String imageExample =
+        'https://doc.cerp.ideria.co/assets/images/image-a5238aed7050a0691758858b2569566d.jpg';
+
     return Container(
       decoration: BoxDecoration(
         color: AppColors.bgBotLight,
@@ -40,7 +43,9 @@ class UserDataIncidence extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 28,
-              backgroundImage: NetworkImage(image),
+              backgroundImage: image!.isEmpty
+                  ? const NetworkImage(imageExample)
+                  : NetworkImage(image!),
             ),
             const SizedBox(width: 16),
             Column(

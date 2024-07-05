@@ -41,7 +41,9 @@ class CardIncidenceList extends ConsumerWidget {
           const SizedBox(width: 12),
           CircleAvatar(
             radius: 24,
-            backgroundImage: image!.isEmpty ? const NetworkImage(imageExample) : NetworkImage(image!),
+            backgroundImage: image!.isEmpty
+                ? const NetworkImage(imageExample)
+                : NetworkImage(image!),
           ),
           const SizedBox(width: 8),
           Column(
@@ -54,7 +56,8 @@ class CardIncidenceList extends ConsumerWidget {
               ),
               Text(
                 address,
-                style: AppTextStyles.s1_m_12(colorTheme.blackVariant.withOpacity(0.5)),
+                style: AppTextStyles.s1_m_12(
+                    colorTheme.blackVariant.withOpacity(0.5)),
               ),
               Text(
                 date,
