@@ -85,9 +85,9 @@ class AppTextStyles {
     );
   }
 
-  static TextStyle p2_m_16(Color color) {
+  static TextStyle p2_m_14(Color color) {
     return TextStyle(
-      fontSize: 16,
+      fontSize: 14,
       fontWeight: FontWeight.w500,
       color: color,
       height: 1.43,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/router/routers.dart';
 
 class ListComponentsScreen extends StatelessWidget {
   const ListComponentsScreen({
@@ -18,17 +19,19 @@ class _Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: const [
+      children: [
         _CustomListTile(
           title: 'Example',
           subTitle: 'Example Screen',
-          location: '/example',
+          location: AppRoutesPaths.example.path,
         ),
         _CustomListTile(
           title: 'Incident TextField',
           subTitle: 'Incident TextField Screen',
           location: '/incidentTextField',
         ),
+      
+          
         _CustomListTile(
           title: 'DetailIncidentTextField Screen',
           subTitle: 'DetailIncident TextField Screen',
@@ -48,6 +51,31 @@ class _Body extends StatelessWidget {
           title: 'ButtonSend With TextField',
           subTitle: 'ButtonSend With TextField Screen',
           location: '/buttonSendTextField',
+
+          title: 'TextFieldIncidentes',
+          subTitle: 'TextFieldIncidentes Screen',
+          location: AppRoutesPaths.textFieldIncidentes.path,
+        ),
+        _CustomListTile(
+          title: 'AppBar',
+          subTitle: 'Example Screen AppBar',
+          location: AppRoutesPaths.appbar.path,
+        ),
+        _CustomListTile(
+          title: 'Card Incidence',
+          subTitle: 'Example Screen Card Incidence',
+          location: AppRoutesPaths.cardIncidence.path,
+        ),
+        _CustomListTile(
+          title: 'Incidence Section',
+          subTitle: 'data user, detail incidence',
+          location: AppRoutesPaths.incidenceSection.path,
+        ),
+        _CustomListTile(
+          title: 'ButtonSheet Section',
+          subTitle: 'buttom sheet and components',
+          location: AppRoutesPaths.bottomSheetSection.path,
+
         ),
       ],
     );
