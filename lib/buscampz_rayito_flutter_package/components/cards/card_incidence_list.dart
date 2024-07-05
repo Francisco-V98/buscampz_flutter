@@ -7,18 +7,22 @@ class CardIncidenceList extends ConsumerWidget {
   final String title;
   final String address;
   final String date;
-  final String image;
+  final String? image;
   const CardIncidenceList({
     super.key,
     required this.title,
     required this.address,
     required this.date,
-    required this.image,
+    this.image,
   });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final colorTheme = ref.watch(appColorThemeProvider);
+
+    const String imageExample =
+        'https://doc.cerp.ideria.co/assets/images/image-a5238aed7050a0691758858b2569566d.jpg';
+
     return Container(
       height: 72,
       decoration: BoxDecoration(
@@ -37,7 +41,7 @@ class CardIncidenceList extends ConsumerWidget {
           const SizedBox(width: 12),
           CircleAvatar(
             radius: 24,
-            backgroundImage: NetworkImage(image),
+            backgroundImage: image!.isEmpty ? const NetworkImage(imageExample) : NetworkImage(image!),
           ),
           const SizedBox(width: 8),
           Column(

@@ -3,8 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/providers/providers.dart';
 
-class CardIncidenceListScreen extends ConsumerWidget {
-  const CardIncidenceListScreen({super.key});
+class CardIncidenceListExampleScreen extends ConsumerWidget {
+  const CardIncidenceListExampleScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -16,19 +16,18 @@ class CardIncidenceListScreen extends ConsumerWidget {
         centerTitle: true,
         title: const Text('Card Incidence List'),
       ),
-      body: const _Body(),
+      body: const _BodyCardIncidenceListExampleScreen(),
     );
   }
 }
 
-class _Body extends ConsumerWidget {
-  const _Body();
+class _BodyCardIncidenceListExampleScreen extends ConsumerWidget {
+  const _BodyCardIncidenceListExampleScreen();
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isDarkMode = ref.watch(isDarkModeProvider);
-    const String imageExample =
-        'https://doc.cerp.ideria.co/assets/images/image-a5238aed7050a0691758858b2569566d.jpg';
+    
     
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
@@ -38,7 +37,6 @@ class _Body extends ConsumerWidget {
             title: 'Problema en el Vehículo',
             address: '1901 Thornridge Cir. Shiloh,Hawaii 81063',
             date: '06:50 A.M - 7:10 A.M',
-            image: imageExample,
           ),
           const SizedBox(height: 56),
           _IconChangeDarkMode(isDarkMode: isDarkMode),

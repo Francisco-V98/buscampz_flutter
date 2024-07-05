@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
-class AppbarScreen extends StatelessWidget {
-  const AppbarScreen({super.key});
+class AppbarExampleScreen extends StatelessWidget {
+  const AppbarExampleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primary,
       appBar: AppBar(centerTitle: true, title: const Text('AppBar')),
-      body: const _Body(),
+      body: const _BodyAppBarExampleScreen(),
     );
   }
 }
 
-class _Body extends StatelessWidget {
-  const _Body();
+class _BodyAppBarExampleScreen extends StatelessWidget {
+  const _BodyAppBarExampleScreen();
 
   @override
   Widget build(BuildContext context) {

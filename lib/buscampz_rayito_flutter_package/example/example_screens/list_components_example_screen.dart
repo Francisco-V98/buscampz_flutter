@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/router/routers.dart';
 
-class ListComponentsScreen extends StatelessWidget {
-  const ListComponentsScreen({
+class ListComponentsExampleScreen extends StatelessWidget {
+  const ListComponentsExampleScreen({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: _Body());
+    return const Scaffold(body: _BodyListComponentsExampleScreen());
   }
 }
 
-class _Body extends StatelessWidget {
-  const _Body();
+class _BodyListComponentsExampleScreen extends StatelessWidget {
+  const _BodyListComponentsExampleScreen();
 
   @override
   Widget build(BuildContext context) {

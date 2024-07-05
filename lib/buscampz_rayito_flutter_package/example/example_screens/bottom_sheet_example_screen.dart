@@ -3,21 +3,21 @@ import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widg
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
-class BottomSheetScreen extends StatelessWidget {
-  const BottomSheetScreen({super.key});
+class BottomSheetExampleScreen extends StatelessWidget {
+  const BottomSheetExampleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.bgBotLight,
       appBar: AppBar(centerTitle: true, title: const Text('Buttom Sheet')),
-      body: const _Body(),
+      body: const _BodyBottomSeetExampleScreen(),
     );
   }
 }
 
-class _Body extends StatelessWidget {
-  const _Body();
+class _BodyBottomSeetExampleScreen extends StatelessWidget {
+  const _BodyBottomSeetExampleScreen();
 
   @override
   Widget build(BuildContext context) {

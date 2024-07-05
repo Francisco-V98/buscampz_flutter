@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
-class IncidenceSectionScreen extends StatelessWidget {
-  const IncidenceSectionScreen({super.key});
+class IncidenceSectionExampleScreen extends StatelessWidget {
+  const IncidenceSectionExampleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,13 +13,13 @@ class IncidenceSectionScreen extends StatelessWidget {
         centerTitle: true,
         title: const Text('Incidence Section'),
       ),
-      body: const _Body(),
+      body: const _BodyIncidenceSectionExampleScreen(),
     );
   }
 }
 
-class _Body extends StatelessWidget {
-  const _Body();
+class _BodyIncidenceSectionExampleScreen extends StatelessWidget {
+  const _BodyIncidenceSectionExampleScreen();
 
   @override
   Widget build(BuildContext context) {

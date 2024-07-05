@@ -38,7 +38,7 @@ class BottomSheetBuscampz extends StatelessWidget {
               ),
             ),
           ),
-          if (title != null)
+          if (title!.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 12),
               child: Text(
