@@ -26,6 +26,32 @@ class _Body extends StatelessWidget {
           location: AppRoutesPaths.example.path,
         ),
         _CustomListTile(
+          title: 'Incident TextField',
+          subTitle: 'Incident TextField Screen',
+          location: '/incidentTextField',
+        ),
+      
+          
+        _CustomListTile(
+          title: 'DetailIncidentTextField Screen',
+          subTitle: 'DetailIncident TextField Screen',
+          location: '/detailIncidenceTextForm',
+        ),
+        _CustomListTile(
+          title: 'SendEvidence Button',
+          subTitle: 'SendEvidence Button Screen',
+          location: '/sendEvidenceButton',
+        ),
+        _CustomListTile(
+          title: 'ResponseClient Card',
+          subTitle: 'ResponseClient Card Screen',
+          location: '/responseClientCard',
+        ),
+        _CustomListTile(
+          title: 'ButtonSend With TextField',
+          subTitle: 'ButtonSend With TextField Screen',
+          location: '/buttonSendTextField',
+
           title: 'TextFieldIncidentes',
           subTitle: 'TextFieldIncidentes Screen',
           location: AppRoutesPaths.textFieldIncidentes.path,
@@ -49,6 +75,7 @@ class _Body extends StatelessWidget {
           title: 'ButtonSheet Section',
           subTitle: 'buttom sheet and components',
           location: AppRoutesPaths.bottomSheetSection.path,
+
         ),
       ],
     );
