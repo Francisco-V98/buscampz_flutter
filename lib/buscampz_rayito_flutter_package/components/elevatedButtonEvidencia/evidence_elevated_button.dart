@@ -1,6 +1,6 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/elevatedButtonEvidencia/content/attach_evidence_button.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevatedButtonEvidencia/content/attach_evidence_button.dart';
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/elevatedButtonEvidencia/content/send_evidence_elevated_button.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevatedButtonEvidencia/content/send_evidence_elevated_button.dart';
 
 //Change name of the class Spanish to English
 class EvidenceElevatedButtons extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/text_field_incidentes/detail_incident_text_form.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 
 class DetailIncidentTextFieldScreen extends StatelessWidget {
   const DetailIncidentTextFieldScreen({super.key});

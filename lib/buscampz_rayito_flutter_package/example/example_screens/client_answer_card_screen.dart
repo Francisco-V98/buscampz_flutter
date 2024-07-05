@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/card_response_client/client_anser_card.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 
 class ClientAnswerCardScreen extends StatelessWidget {
   const ClientAnswerCardScreen({super.key});

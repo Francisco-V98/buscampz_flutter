@@ -11,3 +11,13 @@ export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/card
 export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/incidence_section/detail_incidence.dart';
 
 export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/incidence_section/user_data_incidence.dart';
+
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/card_response_client/client_anser_card.dart';
+
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/text_field_incidentes/detail_incident_text_form.dart';
+
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevatedButtonEvidencia/evidence_elevated_button.dart';
+
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/text_field_incidentes/incident_text_field.dart';
+
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/textfield_with_button_send/button_send_with_text_field.dart';

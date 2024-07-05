@@ -1,23 +1,24 @@
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/textfield_with_button_send_screen.dart';
+import "package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/example_screens_export.dart";
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/screens.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/list_components_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/incidents_text_field_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/example_screens.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/evidence_elevated_button_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/detail_incident_text_field_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/client_answer_card_screen.dart';
+
 
 enum AppRoutesPaths {
   home('/'),
   example('/example'),
-  textFieldIncidentes('/textFieldIncidentes'),
   appbar('/appbar'),
   cardIncidence('/cardIncidence'),
   incidenceSection('/incidenceSection'),
-  bottomSheetSection('/buttomSheetSection');
-
+  incidentTextField("/incidentTextField"),
+  bottomSheetSection('/buttomSheetSection'),
+  sendEvidenceButton("/sendEvidenceButton"),
+  responseClientCard("/responseClientCard"),
+  buttonSendTextField("/buttonSendTextField"),
+  detailIncidenceTextForm("/detailIncidenceTextForm");
+  //textFieldIncidentes('/textFieldIncidentes'),
+  
   const AppRoutesPaths(this.path);
   final String path;
 }
@@ -35,23 +36,23 @@ final appRouterProvider = Provider<GoRouter>(
           builder: (context, state) => const ExampleScreen(),
         ),
         GoRoute(
-          path: '/incidentTextField',
+          path: AppRoutesPaths.incidentTextField.path,
           builder: (context, state) => const IncidentsTextFieldScreen(),
         ),
         GoRoute(
-          path: '/detailIncidenceTextForm',
+          path: AppRoutesPaths.detailIncidenceTextForm.path,
           builder: (context, state) => const DetailIncidentTextFieldScreen(),
         ),
         GoRoute(
-          path: '/sendEvidenceButton',
+          path: AppRoutesPaths.sendEvidenceButton.path,
           builder: (context, state) => const EvidenceElevatedButtonScreen(),
         ),
         GoRoute(
-          path: '/responseClientCard',
+          path: AppRoutesPaths.responseClientCard.path,
           builder: (context, state) => const ClientAnswerCardScreen(),
         ),
         GoRoute(
-          path: '/buttonSendTextField',
+          path: AppRoutesPaths.buttonSendTextField.path,
           builder: (context, state) => const TextFieldWithButtonSendScreen(),
         ),
         GoRoute(

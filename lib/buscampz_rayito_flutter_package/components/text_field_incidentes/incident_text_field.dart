@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/text_field_incidentes/content/incident_content_text_form.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/text_field_incidentes/content/detail_incident_text_form_content.dart';
 
-//Change name of the class Spanish to English
-class DetailIncidentTextField extends StatelessWidget {
-  const DetailIncidentTextField({super.key});
+class IncidentTextField extends StatelessWidget {
+  const IncidentTextField({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,15 +16,13 @@ class DetailIncidentTextField extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Detalle de la Incidencia",
-                style: AppTextStyles.h3_24(
-                  AppColors.bgBotDark,
-                ),
+                "Tipo de Incidencia",
+                style: AppTextStyles.h4_20(AppColors.black),
               ),
               const SizedBox(
                 height: 8,
               ),
-              const DetailIncidentTextFieldContent(),
+              const IncidentContentTextField(),
             ],
           ),
         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/text_field_incidentes/incident_text_field.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
 class IncidentsTextFieldScreen extends StatelessWidget {

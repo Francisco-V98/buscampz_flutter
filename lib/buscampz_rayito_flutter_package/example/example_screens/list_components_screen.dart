@@ -25,35 +25,30 @@ class _Body extends StatelessWidget {
           subTitle: 'Example Screen',
           location: AppRoutesPaths.example.path,
         ),
-        const _CustomListTile(
+         _CustomListTile(
           title: 'Incident TextField',
           subTitle: 'Incident TextField Screen',
-          location: '/incidentTextField',
+          location: AppRoutesPaths.incidentTextField.path,
         ),
-        const _CustomListTile(
+         _CustomListTile(
           title: 'DetailIncidentTextField Screen',
           subTitle: 'DetailIncident TextField Screen',
-          location: '/detailIncidenceTextForm',
+          location: AppRoutesPaths.detailIncidenceTextForm.path,
         ),
-        const _CustomListTile(
+         _CustomListTile(
           title: 'SendEvidence Button',
           subTitle: 'SendEvidence Button Screen',
-          location: '/sendEvidenceButton',
+          location: AppRoutesPaths.sendEvidenceButton.path,
         ),
-        const _CustomListTile(
+         _CustomListTile(
           title: 'ResponseClient Card',
           subTitle: 'ResponseClient Card Screen',
-          location: '/responseClientCard',
+          location: AppRoutesPaths.responseClientCard.path,
         ),
-        const _CustomListTile(
+         _CustomListTile(
           title: 'ButtonSend With TextField',
           subTitle: 'ButtonSend With TextField Screen',
-          location: '/buttonSendTextField',
-        ),
-        _CustomListTile(
-          title: 'TextFieldIncidentes',
-          subTitle: 'TextFieldIncidentes Screen',
-          location: AppRoutesPaths.textFieldIncidentes.path,
+          location: AppRoutesPaths.buttonSendTextField.path,
         ),
         _CustomListTile(
           title: 'AppBar',
