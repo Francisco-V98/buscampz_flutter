@@ -1,7 +1,8 @@
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/elevatedButtonEvidencia/content/send_evidence_elevated_button.dart';
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+//jesus has to add this import to the barrel file
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/elevatedButtonEvidencia/content/send_evidence_elevated_button.dart';
 
 class RYTDetailIncidence extends StatelessWidget {
   final String description;
