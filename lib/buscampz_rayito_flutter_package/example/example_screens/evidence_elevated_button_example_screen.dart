@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 
-class EvidenceElevatedButtonScreen extends StatelessWidget {
-  const EvidenceElevatedButtonScreen({super.key});
+class EvidenceElevatedButtonExampleScreen extends StatelessWidget {
+  const EvidenceElevatedButtonExampleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class EvidenceElevatedButtonScreen extends StatelessWidget {
         title: const Text("Evidence ElevatedButton Screen"),
       ),
       body: const Center(
-        child: EvidenceElevatedButtons(),
+        child: RYTEvidenceElevatedButtons(),
       ),
     );
   }

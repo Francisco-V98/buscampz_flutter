@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 
-class ClientAnswerCardScreen extends StatelessWidget {
-  const ClientAnswerCardScreen({super.key});
+class ClientAnswerCardExampleScreen extends StatelessWidget {
+  const ClientAnswerCardExampleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class ClientAnswerCardScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
-                child: ClientAnswerCard(),
+                child: RYTClientAnswerCard(),
               ),
             ],
           ),

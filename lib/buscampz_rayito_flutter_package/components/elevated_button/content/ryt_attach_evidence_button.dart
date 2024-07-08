@@ -2,10 +2,10 @@ import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/a
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 import 'package:flutter/material.dart';
 
-class AttachPhotoButton extends StatelessWidget {
+class RYTAttachPhotoButton extends StatelessWidget {
   final String text;
   final Color color;
-  const AttachPhotoButton({
+  const RYTAttachPhotoButton({
     super.key,
     required this.text,
     required this.color,

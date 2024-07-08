@@ -60,7 +60,7 @@ class _Body extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ButtonSendWithTextField(),
+              RYTButtonSendWithTextField(),
             ],
           ),
         ],

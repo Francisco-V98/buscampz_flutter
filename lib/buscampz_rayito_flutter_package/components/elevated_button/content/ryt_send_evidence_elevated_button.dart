@@ -3,9 +3,9 @@ import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/a
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
 //Change name of the class Spanish to English
-class SendEvidenceElevatedButton extends StatelessWidget {
+class RYTSendEvidenceElevatedButton extends StatelessWidget {
   final String text;
-  const SendEvidenceElevatedButton({
+  const RYTSendEvidenceElevatedButton({
     super.key,
     required this.text,
   });

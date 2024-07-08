@@ -12,12 +12,23 @@ export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/inci
 
 export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/incidence_section/user_data_incidence.dart';
 
-export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/card_response_client/client_anser_card.dart';
+//Client Answer to an incident
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/card_response_client/ryt_client_answer_card.dart';
 
-export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/text_field_incidentes/detail_incident_text_form.dart';
+//TextFormField Write an incident
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/text_field_incidentes/ryt_incident_text_field.dart';
 
-export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevatedButtonEvidencia/evidence_elevated_button.dart';
+//TextFormField Write and describe an incident
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/text_field_incidentes/ryt_detail_incident_text_form.dart';
 
-export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/text_field_incidentes/incident_text_field.dart';
+//ElevatedButton send evidence
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevated_button/ryt_evidence_elevated_button.dart';
 
-export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/textfield_with_button_send/button_send_with_text_field.dart';
+//IconButton to send the incident comment - or send a text
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/textfield_with_button_send/content/button_send/ryt_button_send_content.dart';
+
+//TextFormField to write an incident comment
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/textfield_with_button_send/content/textfield_send/ryt_send_content_text_field.dart';
+
+//Both Widgets in the same field, send and write an evidence
+export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/textfield_with_button_send/ryt_button_send_with_text_field.dart';

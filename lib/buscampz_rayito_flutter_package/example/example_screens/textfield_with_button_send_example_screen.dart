@@ -2,21 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
-class IncidentsTextFieldScreen extends StatelessWidget {
-  const IncidentsTextFieldScreen({super.key});
+class TextFieldWithButtonSendExampleScreen extends StatelessWidget {
+  const TextFieldWithButtonSendExampleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.bgBotLight,
       appBar: AppBar(
-        title: const Text("TextFieldIncidents"),
+        title: const Text("TextField With ButtonSendScreen"),
       ),
-      body: Container(
-        color: AppColors.primary,
-        child: const Center(
-          child: IncidentTextField(),
-        ),
-      ),
+      body: const RYTButtonSendWithTextField(),
     );
   }
 }

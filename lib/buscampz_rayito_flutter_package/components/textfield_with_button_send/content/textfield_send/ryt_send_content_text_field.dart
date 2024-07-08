@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SendContentTextField extends StatelessWidget {
-  const SendContentTextField({
+class RYTSendContentTextField extends StatelessWidget {
+  const RYTSendContentTextField({
     super.key,
   });
 

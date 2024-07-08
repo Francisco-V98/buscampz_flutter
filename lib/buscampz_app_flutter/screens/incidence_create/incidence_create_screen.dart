@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevatedButtonEvidencia/content/attach_evidence_button.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevatedButtonEvidencia/content/send_evidence_elevated_button.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevated_button/content/ryt_attach_evidence_button.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevated_button/content/ryt_send_evidence_elevated_button.dart';
 
 class IncidenceCreateScreen extends StatelessWidget {
   const IncidenceCreateScreen({super.key});
@@ -30,9 +30,9 @@ class _Body extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          IncidentTextField(),
-          DetailIncidentTextField(),
-          AttachPhotoButton(
+          RYTIncidentTextField(),
+          RYTDetailIncidentTextField(),
+          RYTAttachPhotoButton(
             color: AppColors.bgBotLight,
             text: "Adjuntar Foto",
           ),
@@ -46,7 +46,7 @@ class _Body extends StatelessWidget {
             ),
           ),
           Spacer(),
-          SendEvidenceElevatedButton(
+          RYTSendEvidenceElevatedButton(
             text: "Enviar Evidencia",
           ),
           SizedBox(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
-class ButtonSendContent extends StatelessWidget {
-  const ButtonSendContent({
+class RYTButtonSendContent extends StatelessWidget {
+  const RYTButtonSendContent({
     super.key,
   });
 

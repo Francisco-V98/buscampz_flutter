@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
 //Change name of the class Spanish to English
-class DetailIncidentTextFieldContent extends StatelessWidget {
-  const DetailIncidentTextFieldContent({
+class RYTDetailIncidentTextFieldContent extends StatelessWidget {
+  const RYTDetailIncidentTextFieldContent({
     super.key,
   });
 

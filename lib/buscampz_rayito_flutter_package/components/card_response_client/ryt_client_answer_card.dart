@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/card_response_client/content/client_content_answer_card.dart';
 
-class ClientAnswerCard extends StatelessWidget {
-  const ClientAnswerCard({super.key});
+class RYTClientAnswerCard extends StatelessWidget {
+  const RYTClientAnswerCard({super.key});
 
   @override
   Widget build(BuildContext context) {
