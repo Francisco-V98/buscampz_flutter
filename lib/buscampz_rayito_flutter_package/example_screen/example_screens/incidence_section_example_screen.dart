@@ -34,7 +34,7 @@ class _BodyIncidenceSectionExampleScreen extends StatelessWidget {
             color: AppColors.white,
             child: const Padding(
               padding: EdgeInsets.symmetric(vertical: 24),
-              child: UserDataIncidence(
+              child: RYTUserDataIncidence(
                 image: imageExample,
                 title: 'Freddy Rodríguez',
                 address: 'Colegio San Sebastián de los Altos Campos.',
@@ -43,7 +43,7 @@ class _BodyIncidenceSectionExampleScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 24),
-          const DetailIncidence(
+          const RYTDetailIncidence(
             description:
                 'Hola a todos, tuve un inconveniente con la llanta, la estoy reparando y luego continúo con la ruta. Voy a llegar un poco más tarde de lo acordado. Pueden chequear la App para ver el recorrido que voy a estar haciendo.',
           ),

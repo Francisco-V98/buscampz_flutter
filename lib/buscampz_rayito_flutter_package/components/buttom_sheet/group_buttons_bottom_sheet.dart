@@ -9,17 +9,17 @@ class ButtonGroupBottomSheet extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        BottomSheetButton(
+        RYTBottomSheetButton(
           icon: Icons.sync_rounded,
           text: 'En Proceso',
           onTap: () {},
         ),
-        BottomSheetButton(
+        RYTBottomSheetButton(
           icon: Icons.check_circle_outline_rounded,
           text: 'Resuelto',
           onTap: () {},
         ),
-        BottomSheetButton(
+        RYTBottomSheetButton(
           icon: Icons.add_circle_outline,
           text: 'nuevo',
           onTap: () {},

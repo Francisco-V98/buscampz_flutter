@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
-class UserDataIncidence extends StatelessWidget {
+class RYTUserDataIncidence extends StatelessWidget {
   final String? image;
   final String title;
   final String address;
   final String route;
-  const UserDataIncidence({
+  const RYTUserDataIncidence({
     super.key,
     required this.image,
     required this.title,

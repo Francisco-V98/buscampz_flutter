@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
-class AppBarBuscampz extends StatelessWidget {
+class RYTAppBarBuscampz extends StatelessWidget {
   final Color? background;
   final String title;
   final IconData? iconRight;
   final IconData? iconLeft;
 
-  const AppBarBuscampz({
+  const RYTAppBarBuscampz({
     super.key,
     this.background,
     required this.title,

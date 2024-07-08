@@ -3,9 +3,9 @@ import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widg
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
-class BottomSheetBuscampz extends StatelessWidget {
+class RYTBottomSheetBuscampz extends StatelessWidget {
   final String? title;
-  const BottomSheetBuscampz({
+  const RYTBottomSheetBuscampz({
     super.key,
     this.title,
   });

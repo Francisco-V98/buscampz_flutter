@@ -26,7 +26,7 @@ class _BodyBottomSeetExampleScreen extends StatelessWidget {
       child: Center(
         child: Column(
           children: [
-            BottomSheetButton(
+            RYTBottomSheetButton(
               icon: Icons.add_circle_outline,
               text: 'nuevo',
               onTap: () {},
@@ -40,7 +40,7 @@ class _BodyBottomSeetExampleScreen extends StatelessWidget {
                   context: context,
                   barrierColor: AppColors.black.withOpacity(0.25),
                   isDismissible: true,
-                  builder: (context) => const BottomSheetBuscampz(
+                  builder: (context) => const RYTBottomSheetBuscampz(
                     title: 'Estado de la Incidencia',
                   ),
                 );

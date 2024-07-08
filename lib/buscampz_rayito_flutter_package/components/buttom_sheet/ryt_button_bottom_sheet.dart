@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
-class BottomSheetButton extends StatelessWidget {
+class RYTBottomSheetButton extends StatelessWidget {
   final IconData icon;
   final String text;
   final Function()? onTap;
-  const BottomSheetButton({
+  const RYTBottomSheetButton({
     super.key,
     required this.icon,
     required this.text,

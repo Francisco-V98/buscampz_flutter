@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/providers/providers.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/providers/providers.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
-class CardIncidenceList extends ConsumerWidget {
+class RYTCardIncidenceList extends ConsumerWidget {
   final String title;
   final String address;
   final String date;
   final String? image;
-  const CardIncidenceList({
+  const RYTCardIncidenceList({
     super.key,
     required this.title,
     required this.address,

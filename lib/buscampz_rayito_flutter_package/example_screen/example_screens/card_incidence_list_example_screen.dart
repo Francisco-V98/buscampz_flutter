@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/providers/providers.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/providers/providers.dart';
 
 class CardIncidenceListExampleScreen extends ConsumerWidget {
   const CardIncidenceListExampleScreen({super.key});
@@ -33,7 +33,7 @@ class _BodyCardIncidenceListExampleScreen extends ConsumerWidget {
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
       child: Column(
         children: [
-          const CardIncidenceList(
+          const RYTCardIncidenceList(
             title: 'Problema en el Vehículo',
             address: '1901 Thornridge Cir. Shiloh,Hawaii 81063',
             date: '06:50 A.M - 7:10 A.M',

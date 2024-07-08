@@ -1,13 +1,13 @@
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/textfield_with_button_send_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/all_example_screens.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/list_components_example_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/incidents_text_field_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/example_screens.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/evidence_elevated_button_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/detail_incident_text_field_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/client_answer_card_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/textfield_with_button_send_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/all_example_screens.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/list_components_example_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/incidents_text_field_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/example_screens.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/evidence_elevated_button_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/detail_incident_text_field_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/client_answer_card_screen.dart';
 
 enum AppRoutesPaths {
   home('/'),

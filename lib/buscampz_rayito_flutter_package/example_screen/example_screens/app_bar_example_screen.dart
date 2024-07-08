@@ -24,21 +24,21 @@ class _BodyAppBarExampleScreen extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 24),
       child: Column(
         children: [
-          AppBarBuscampz(title: 'Hola, Pedro'),
+          RYTAppBarBuscampz(title: 'Hola, Pedro'),
           SizedBox(height: 24),
-          AppBarBuscampz(
+          RYTAppBarBuscampz(
             title: 'title',
             background: AppColors.white,
             iconRight: Icons.circle_notifications,
           ),
           SizedBox(height: 24),
-          AppBarBuscampz(
+          RYTAppBarBuscampz(
             title: 'title',
             iconLeft: Icons.arrow_back_ios,
             iconRight: Icons.circle_notifications,
           ),
           SizedBox(height: 24),
-          AppBarBuscampz(
+          RYTAppBarBuscampz(
             title: 'title',
             iconLeft: Icons.arrow_back_ios,
             background: AppColors.white,
