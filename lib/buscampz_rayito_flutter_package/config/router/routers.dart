@@ -1,10 +1,10 @@
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/real_screens/incidence_create.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/real_screens/incidence_view_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import "package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/example_screens_export.dart";
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/screens.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/list_components_screen.dart';
-
 
 enum AppRoutesPaths {
   home('/'),
@@ -13,14 +13,16 @@ enum AppRoutesPaths {
   cardIncidence('/cardIncidence'),
   incidenceSection('/incidenceSection'),
   incidentTextField("/incidentTextField"),
-  incidenceCreateScreen("/incidenceCreateScreen"),
   bottomSheetSection('/buttomSheetSection'),
   sendEvidenceButton("/sendEvidenceButton"),
   responseClientCard("/responseClientCard"),
   buttonSendTextField("/buttonSendTextField"),
-  detailIncidenceTextForm("/detailIncidenceTextForm");
+  detailIncidenceTextForm("/detailIncidenceTextForm"),
+  incidenceCreateScreen("/incidenceCreateScreen"),
+  incidenceViewScreen("/incidenceViewScreen");
+
   //textFieldIncidentes('/textFieldIncidentes'),
-  
+
   const AppRoutesPaths(this.path);
   final String path;
 }
@@ -74,8 +76,12 @@ final appRouterProvider = Provider<GoRouter>(
           builder: (context, state) => const BottomSheetScreen(),
         ),
         GoRoute(
-        path: AppRoutesPaths.incidenceCreateScreen.path,
-        builder: (context, state) => const IncidenceCreatescreen(),
+          path: AppRoutesPaths.incidenceCreateScreen.path,
+          builder: (context, state) => const IncidenceCreateScreen(),
+        ),
+        GoRoute(
+          path: AppRoutesPaths.incidenceViewScreen.path,
+          builder: (context, state) => const IncidenceViewScreen(),
         )
       ],
     );

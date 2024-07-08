@@ -1,4 +1,5 @@
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevatedButtonEvidencia/content/attach_evidence_button.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevatedButtonEvidencia/content/send_evidence_elevated_button.dart';
 
@@ -18,6 +19,7 @@ class EvidenceElevatedButtons extends StatelessWidget {
           child: SizedBox(
             width: double.infinity,
             child: AttachPhotoButton(
+              color: AppColors.bgBotLight,
               text: "Adjuntar Foto",
             ),
           ),

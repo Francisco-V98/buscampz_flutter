@@ -20,7 +20,11 @@ class ClientAnswerCard extends StatelessWidget {
           8.0,
         ),
       ),
-      child: const ClientContentAnswerCard(),
+      child: const ClientContentAnswerCard(
+        clientName: "Selena Hernández",
+        text: "Ok señor Freddye, estoy atento para bajar y buscar a daniel",
+        image: "assets/images/image_client_example.png",
+      ),
     );
   }
 }

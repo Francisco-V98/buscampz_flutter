@@ -25,27 +25,27 @@ class _Body extends StatelessWidget {
           subTitle: 'Example Screen',
           location: AppRoutesPaths.example.path,
         ),
-         _CustomListTile(
+        _CustomListTile(
           title: 'Incident TextField',
           subTitle: 'Incident TextField Screen',
           location: AppRoutesPaths.incidentTextField.path,
         ),
-         _CustomListTile(
+        _CustomListTile(
           title: 'DetailIncidentTextField Screen',
           subTitle: 'DetailIncident TextField Screen',
           location: AppRoutesPaths.detailIncidenceTextForm.path,
         ),
-         _CustomListTile(
+        _CustomListTile(
           title: 'SendEvidence Button',
           subTitle: 'SendEvidence Button Screen',
           location: AppRoutesPaths.sendEvidenceButton.path,
         ),
-         _CustomListTile(
+        _CustomListTile(
           title: 'ResponseClient Card',
           subTitle: 'ResponseClient Card Screen',
           location: AppRoutesPaths.responseClientCard.path,
         ),
-         _CustomListTile(
+        _CustomListTile(
           title: 'ButtonSend With TextField',
           subTitle: 'ButtonSend With TextField Screen',
           location: AppRoutesPaths.buttonSendTextField.path,
@@ -74,6 +74,11 @@ class _Body extends StatelessWidget {
           title: 'IncidenceSectionScreen',
           subTitle: 'Incidence Section Screen',
           location: AppRoutesPaths.incidenceCreateScreen.path,
+        ),
+        _CustomListTile(
+          title: 'IncidenceViewScreen',
+          subTitle: 'Incidence View Screen',
+          location: AppRoutesPaths.incidenceViewScreen.path,
         ),
       ],
     );

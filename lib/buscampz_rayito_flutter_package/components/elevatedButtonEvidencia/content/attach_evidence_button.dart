@@ -4,15 +4,20 @@ import 'package:flutter/material.dart';
 
 class AttachPhotoButton extends StatelessWidget {
   final String text;
+  final Color color;
   const AttachPhotoButton({
     super.key,
     required this.text,
+    required this.color,
   });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ButtonStyle(
+        backgroundColor: WidgetStatePropertyAll(
+          color,
+        ),
         elevation: const WidgetStatePropertyAll(
           0,
         ),
@@ -32,9 +37,6 @@ class AttachPhotoButton extends StatelessWidget {
               8.0,
             ),
           ),
-        ),
-        foregroundColor: WidgetStateProperty.all(
-          AppColors.bgBotDark,
         ),
       ),
       onPressed: () {},
