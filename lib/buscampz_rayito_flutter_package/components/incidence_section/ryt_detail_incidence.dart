@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
-//jesus has to add this import to the barrel file
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/ryt_app_text_style.dart';
+//TODO: jesus has to add this import to the barrel file
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/elevatedButtonEvidencia/content/send_evidence_elevated_button.dart';
 
 class RYTDetailIncidence extends StatelessWidget {
-  final String description;
+  final String? description;
   final bool withBottomImage;
+  final int? numberOfViews;
+  final int? numberOfComments;
+  final int? numberOfImagess;
   const RYTDetailIncidence({
     super.key,
     required this.description,
     this.withBottomImage = false,
+    this.numberOfViews,
+    this.numberOfComments,
+    this.numberOfImagess,
   });
 
   @override
@@ -29,25 +35,37 @@ class RYTDetailIncidence extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              description,
-              style: AppTextStyles.p1_m_16(AppColors.black),
+              description ?? 'Error getting description',
+              style: RYTAppTextStyles.p1_m_16(AppColors.black),
               textAlign: TextAlign.center,
             ),
+            //TODO: Waiting for Jesus to add the parameters to the button
             withBottomImage
                 ? const SendEvidenceElevatedButton()
                 : const SizedBox.shrink(),
-            const Padding(
-              padding: EdgeInsets.symmetric(vertical: 4),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 4),
               child: Row(
                 children: [
+                  // Icon and number of user views
                   _BottomIconAndNumberDetailIncidence(
-                      Icons.visibility_outlined, 3),
-                  Spacer(),
+                    Icons.visibility_outlined,
+                    numberOfViews,
+                  ),
+                  const Spacer(),
+
+                  // Icon and number of user comments
                   _BottomIconAndNumberDetailIncidence(
-                      Icons.chat_bubble_outline, 8),
-                  SizedBox(width: 24),
+                    Icons.chat_bubble_outline,
+                    numberOfComments,
+                  ),
+                  const SizedBox(width: 24),
+
+                  // Icon and number of images uploaded by the driver
                   _BottomIconAndNumberDetailIncidence(
-                      Icons.add_photo_alternate_outlined, 1),
+                    Icons.add_photo_alternate_outlined,
+                    numberOfImagess,
+                  ),
                 ],
               ),
             ),
@@ -60,7 +78,7 @@ class RYTDetailIncidence extends StatelessWidget {
 
 class _BottomIconAndNumberDetailIncidence extends StatelessWidget {
   final IconData icon;
-  final int numberOfInteractions;
+  final int? numberOfInteractions;
   const _BottomIconAndNumberDetailIncidence(
       this.icon, this.numberOfInteractions);
 
@@ -69,10 +87,15 @@ class _BottomIconAndNumberDetailIncidence extends StatelessWidget {
     return Row(
       children: [
         Icon(icon, size: 16),
-        Text(
-          numberOfInteractions.toString(),
-          style: AppTextStyles.p2_m_14(AppColors.black),
-        )
+        numberOfInteractions != null
+            ? Text(
+                numberOfInteractions.toString(),
+                style: RYTAppTextStyles.p2_m_14(AppColors.black),
+              )
+            : Text(
+                '0',
+                style: RYTAppTextStyles.p2_m_14(AppColors.black),
+              ),
       ],
     );
   }

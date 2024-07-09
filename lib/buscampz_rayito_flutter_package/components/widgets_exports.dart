@@ -4,7 +4,6 @@ export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/appb
 //buttomSheet
 export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/buttom_sheet/ryt_bottom_sheet.dart';
 export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/buttom_sheet/ryt_button_bottom_sheet.dart';
-export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/buttom_sheet/group_buttons_bottom_sheet.dart';
 
 //card_incidence
 export 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/cards/ryt_card_incidence_list.dart';

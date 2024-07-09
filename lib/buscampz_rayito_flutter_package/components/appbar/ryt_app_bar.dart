@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/ryt_app_text_style.dart';
 
-class RYTAppBarBuscampz extends StatelessWidget {
+class RYTAppBar extends StatelessWidget {
   final Color? background;
   final String title;
   final IconData? iconRight;
   final IconData? iconLeft;
 
-  const RYTAppBarBuscampz({
+  const RYTAppBar({
     super.key,
     this.background,
     required this.title,
@@ -27,11 +27,11 @@ class RYTAppBarBuscampz extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             iconLeft != null
-                ? _IconAppBar(iconLeft!)
+                ? _IconAppBar(iconRight ?? Icons.question_mark)
                 : const SizedBox(height: 48, width: 48),
-            Text(title, style: AppTextStyles.h4_20(AppColors.black)),
+            Text(title, style: RYTAppTextStyles.h4_20(AppColors.black)),
             iconRight != null
-                ? _IconAppBar(iconRight!)
+                ? _IconAppBar(iconRight ?? Icons.question_mark)
                 : const SizedBox(height: 48, width: 48),
           ],
         ),
@@ -57,11 +57,10 @@ class _IconAppBar extends StatelessWidget {
   }
 }
 
-class CircleImageAppBar extends StatelessWidget {
+class _CircleImageAppBar extends StatelessWidget {
   final String image;
 
-  const CircleImageAppBar({
-    super.key,
+  const _CircleImageAppBar({
     required this.image,
   });
 

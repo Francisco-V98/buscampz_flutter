@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets_exports.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
 class AppbarExampleScreen extends StatelessWidget {
@@ -24,22 +24,22 @@ class _BodyAppBarExampleScreen extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 24),
       child: Column(
         children: [
-          RYTAppBarBuscampz(title: 'Hola, Pedro'),
+          RYTAppBar(title: 'Hola, Pedro'),
           SizedBox(height: 24),
-          RYTAppBarBuscampz(
+          RYTAppBar(
             title: 'title',
             background: AppColors.white,
             iconRight: Icons.circle_notifications,
           ),
           SizedBox(height: 24),
-          RYTAppBarBuscampz(
-            title: 'title',
+          RYTAppBar(
+            title: 'Hola, Pedro',
             iconLeft: Icons.arrow_back_ios,
             iconRight: Icons.circle_notifications,
           ),
           SizedBox(height: 24),
-          RYTAppBarBuscampz(
-            title: 'title',
+          RYTAppBar(
+            title: 'Hola, Pedro',
             iconLeft: Icons.arrow_back_ios,
             background: AppColors.white,
           ),

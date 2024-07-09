@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppTextStyles {
+class RYTAppTextStyles {
 
   static TextStyle h1_32(Color color) {
     return TextStyle(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/ryt_app_text_style.dart';
 
 class RYTBottomSheetButton extends StatelessWidget {
   final IconData icon;
@@ -49,7 +49,7 @@ class RYTBottomSheetButton extends StatelessWidget {
             const SizedBox(height: 4),
             Text(
               text,
-              style: AppTextStyles.s1_s_12(AppColors.black),
+              style: RYTAppTextStyles.s1_s_12(AppColors.black),
             ),
           ],
         ),

@@ -1,12 +1,11 @@
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/providers/providers.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/ryt_app_text_style.dart';
 
-class RYTCardIncidenceList extends ConsumerWidget {
-  final String title;
-  final String address;
-  final String date;
+class RYTCardIncidenceList extends StatelessWidget {
+  final String? title;
+  final String? address;
+  final String? date;
   final String? image;
   const RYTCardIncidenceList({
     super.key,
@@ -17,8 +16,7 @@ class RYTCardIncidenceList extends ConsumerWidget {
   });
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final colorTheme = ref.watch(appColorThemeProvider);
+  Widget build(BuildContext context) {
 
     const String imageExample =
         'https://doc.cerp.ideria.co/assets/images/image-a5238aed7050a0691758858b2569566d.jpg';
@@ -26,11 +24,11 @@ class RYTCardIncidenceList extends ConsumerWidget {
     return Container(
       height: 72,
       decoration: BoxDecoration(
-        color: colorTheme.bgTop,
+        color: AppColors.bgTopLight,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: colorTheme.black.withOpacity(0.1),
+            color: AppColors.black.withOpacity(0.1),
             blurRadius: 4,
             offset: const Offset(0, 4),
           ),
@@ -51,17 +49,17 @@ class RYTCardIncidenceList extends ConsumerWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                title,
-                style: AppTextStyles.sub3_14(colorTheme.blackVariant),
+                title ?? 'error title',
+                style: RYTAppTextStyles.sub3_14(AppColors.black),
               ),
               Text(
-                address,
-                style: AppTextStyles.s1_m_12(
-                    colorTheme.blackVariant.withOpacity(0.5)),
+                address ?? 'error address',
+                style: RYTAppTextStyles.s1_m_12(
+                    AppColors.black.withOpacity(0.5)),
               ),
               Text(
-                date,
-                style: AppTextStyles.s3_m_10(colorTheme.info),
+                date ?? 'error date',
+                style: RYTAppTextStyles.s3_m_10(AppColors.infoLight),
               ),
             ],
           )

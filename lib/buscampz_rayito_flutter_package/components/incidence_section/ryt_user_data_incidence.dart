@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/ryt_app_text_style.dart';
 
 class RYTUserDataIncidence extends StatelessWidget {
   final String? image;
@@ -53,19 +53,19 @@ class RYTUserDataIncidence extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: AppTextStyles.sub3_14(AppColors.black),
+                  style: RYTAppTextStyles.sub3_14(AppColors.black),
                 ),
                 SizedBox(
                   width: 170,
                   child: Text(
                     address,
                     style:
-                        AppTextStyles.s1_m_12(AppColors.black.withOpacity(0.6)),
+                        RYTAppTextStyles.s1_m_12(AppColors.black.withOpacity(0.6)),
                   ),
                 ),
                 Text(
                   route,
-                  style: AppTextStyles.s1_m_12(AppColors.successLight),
+                  style: RYTAppTextStyles.s1_m_12(AppColors.successLight),
                 ),
               ],
             ),
@@ -79,7 +79,7 @@ class RYTUserDataIncidence extends StatelessWidget {
                 ),
                 Text(
                   'Resuelto',
-                  style: AppTextStyles.s2_s_11(AppColors.successLight),
+                  style: RYTAppTextStyles.s2_s_11(AppColors.successLight),
                 ),
               ],
             )
