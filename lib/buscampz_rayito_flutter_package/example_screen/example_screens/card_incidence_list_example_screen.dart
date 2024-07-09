@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets_exports.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/providers/providers.dart';
 
-class CardIncidenceListExampleScreen extends ConsumerWidget {
+class CardIncidenceListExampleScreen extends StatelessWidget {
   const CardIncidenceListExampleScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final colorTheme = ref.watch(appColorThemeProvider);
+  Widget build(BuildContext context) {
 
     return Scaffold(
-      backgroundColor: colorTheme.bgBot,
+      backgroundColor: AppColors.bgBotLight,
       appBar: AppBar(
         centerTitle: true,
         title: const Text('Card Incidence List'),
@@ -21,47 +19,25 @@ class CardIncidenceListExampleScreen extends ConsumerWidget {
   }
 }
 
-class _BodyCardIncidenceListExampleScreen extends ConsumerWidget {
+class _BodyCardIncidenceListExampleScreen extends StatelessWidget {
   const _BodyCardIncidenceListExampleScreen();
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final isDarkMode = ref.watch(isDarkModeProvider);
+  Widget build(BuildContext context) {
     
     
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+    return const Padding(
+      padding: EdgeInsets.symmetric(vertical: 24, horizontal: 16),
       child: Column(
         children: [
-          const RYTCardIncidenceList(
+          RYTCardIncidenceList(
             title: 'Problema en el Vehículo',
             address: '1901 Thornridge Cir. Shiloh,Hawaii 81063',
             date: '06:50 A.M - 7:10 A.M',
           ),
-          const SizedBox(height: 56),
-          _IconChangeDarkMode(isDarkMode: isDarkMode),
+        
         ],
       ),
-    );
-  }
-}
-
-class _IconChangeDarkMode extends ConsumerWidget {
-  const _IconChangeDarkMode({
-    required this.isDarkMode,
-  });
-
-  final bool isDarkMode;
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    return IconButton(
-      icon: Icon(
-          isDarkMode ? Icons.dark_mode_outlined : Icons.light_mode_outlined,
-          size: 56),
-      onPressed: () {
-        ref.read(isDarkModeProvider.notifier).update((state) => !state);
-      },
     );
   }
 }
