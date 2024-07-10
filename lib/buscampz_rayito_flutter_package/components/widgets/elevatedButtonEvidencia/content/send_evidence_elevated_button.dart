@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/ryt_app_text_style.dart';
 //Change name of the class Spanish to English
 class SendEvidenceElevatedButton extends StatelessWidget {
   const SendEvidenceElevatedButton({
@@ -47,7 +47,7 @@ class SendEvidenceElevatedButton extends StatelessWidget {
           onPressed: () {},
           child: Text(
             'Enviar Incidencia',
-            style: AppTextStyles.btn_16(
+            style: RYTAppTextStyles.btn_16(
               AppColors.bgBotDark,
             ),
           ),

@@ -1,8 +1,6 @@
-// ignore_for_file: non_constant_identifier_names
-
 import 'package:flutter/material.dart';
 
-class AppTextStyles {
+class RYTAppTextStyles {
 
   static TextStyle h1_32(Color color) {
     return TextStyle(

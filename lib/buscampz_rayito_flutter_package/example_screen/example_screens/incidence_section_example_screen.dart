@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets_exports.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
-class IncidenceSectionScreen extends StatelessWidget {
-  const IncidenceSectionScreen({super.key});
+class IncidenceSectionExampleScreen extends StatelessWidget {
+  const IncidenceSectionExampleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,13 +13,13 @@ class IncidenceSectionScreen extends StatelessWidget {
         centerTitle: true,
         title: const Text('Incidence Section'),
       ),
-      body: const _Body(),
+      body: const _BodyIncidenceSectionExampleScreen(),
     );
   }
 }
 
-class _Body extends StatelessWidget {
-  const _Body();
+class _BodyIncidenceSectionExampleScreen extends StatelessWidget {
+  const _BodyIncidenceSectionExampleScreen();
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class _Body extends StatelessWidget {
             color: AppColors.white,
             child: const Padding(
               padding: EdgeInsets.symmetric(vertical: 24),
-              child: UserDataIncidence(
+              child: RYTUserDataIncidence(
                 image: imageExample,
                 title: 'Freddy Rodríguez',
                 address: 'Colegio San Sebastián de los Altos Campos.',
@@ -43,7 +43,7 @@ class _Body extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 24),
-          const DetailIncidence(
+          const RYTDetailIncidence(
             description:
                 'Hola a todos, tuve un inconveniente con la llanta, la estoy reparando y luego continúo con la ruta. Voy a llegar un poco más tarde de lo acordado. Pueden chequear la App para ver el recorrido que voy a estar haciendo.',
           ),

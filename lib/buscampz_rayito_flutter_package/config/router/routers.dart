@@ -1,13 +1,14 @@
 import 'package:go_router/go_router.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/textfield_with_button_send_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/screens.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/list_components_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/incidents_text_field_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/example_screens.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/evidence_elevated_button_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/detail_incident_text_field_screen.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/example_screens/client_answer_card_screen.dart';
+//TODO: jesus has to add this import to the barrel file
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/textfield_with_button_send_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/example_screens_exports.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/list_components_example_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/incidents_text_field_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/example_screens.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/evidence_elevated_button_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/detail_incident_text_field_screen.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/example_screens/client_answer_card_screen.dart';
 
 enum AppRoutesPaths {
   home('/'),
@@ -28,7 +29,7 @@ final appRouterProvider = Provider<GoRouter>(
       routes: [
         GoRoute(
           path: AppRoutesPaths.home.path,
-          builder: (context, state) => const ListComponentsScreen(),
+          builder: (context, state) => const ListComponentsExampleScreen(),
         ),
         GoRoute(
           path: AppRoutesPaths.example.path,
@@ -56,19 +57,19 @@ final appRouterProvider = Provider<GoRouter>(
         ),
         GoRoute(
           path: AppRoutesPaths.appbar.path,
-          builder: (context, state) => const AppbarScreen(),
+          builder: (context, state) => const AppbarExampleScreen(),
         ),
         GoRoute(
           path: AppRoutesPaths.cardIncidence.path,
-          builder: (context, state) => const CardIncidenceListScreen(),
+          builder: (context, state) => const CardIncidenceListExampleScreen(),
         ),
         GoRoute(
           path: AppRoutesPaths.incidenceSection.path,
-          builder: (context, state) => const IncidenceSectionScreen(),
+          builder: (context, state) => const IncidenceSectionExampleScreen(),
         ),
         GoRoute(
           path: AppRoutesPaths.bottomSheetSection.path,
-          builder: (context, state) => const BottomSheetScreen(),
+          builder: (context, state) => const BottomSheetExampleScreen(),
         )
       ],
     );
