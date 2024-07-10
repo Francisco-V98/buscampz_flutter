@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:buscampz_flutter/generated/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/providers/providers.dart';
 
 class CardIncidenceListScreen extends ConsumerWidget {
@@ -29,15 +30,15 @@ class _Body extends ConsumerWidget {
     final isDarkMode = ref.watch(isDarkModeProvider);
     const String imageExample =
         'https://doc.cerp.ideria.co/assets/images/image-a5238aed7050a0691758858b2569566d.jpg';
-    
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
       child: Column(
         children: [
-          const CardIncidenceList(
-            title: 'Problema en el Vehículo',
-            address: '1901 Thornridge Cir. Shiloh,Hawaii 81063',
-            date: '06:50 A.M - 7:10 A.M',
+          CardIncidenceList(
+            title: S.of(context).vehicleProblem,
+            address: S.of(context).addressExample,
+            date: S.of(context).dateExample,
             image: imageExample,
           ),
           const SizedBox(height: 56),

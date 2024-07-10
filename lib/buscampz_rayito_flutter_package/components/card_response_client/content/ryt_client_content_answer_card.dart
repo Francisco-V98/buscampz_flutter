@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 
-class ClientContentAnswerCard extends StatelessWidget {
+//!I can't set optional parameters
+class RYTClientContentAnswerCard extends StatelessWidget {
   final String clientName;
   final String image;
   final String text;
 
-  const ClientContentAnswerCard({
+  const RYTClientContentAnswerCard({
     super.key,
     required this.clientName,
     required this.image,

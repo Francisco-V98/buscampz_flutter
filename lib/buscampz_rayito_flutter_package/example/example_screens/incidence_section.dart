@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
+import 'package:buscampz_flutter/generated/l10n.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 
 class IncidenceSectionScreen extends StatelessWidget {
   const IncidenceSectionScreen({super.key});
@@ -32,20 +33,20 @@ class _Body extends StatelessWidget {
         children: [
           Container(
             color: AppColors.white,
-            child: const Padding(
+            child:  Padding(
               padding: EdgeInsets.symmetric(vertical: 24),
               child: UserDataIncidence(
                 image: imageExample,
-                title: 'Freddy Rodríguez',
-                address: 'Colegio San Sebastián de los Altos Campos.',
-                route: 'Ruta AB32-5',
+                title: S.of(context).freddyRodriguez,
+                address: S.of(context).colegioSanSebastian,
+                route: S.of(context).rutaAB32,
               ),
             ),
           ),
           const SizedBox(height: 24),
-          const DetailIncidence(
+           DetailIncidence(
             description:
-                'Hola a todos, tuve un inconveniente con la llanta, la estoy reparando y luego continúo con la ruta. Voy a llegar un poco más tarde de lo acordado. Pueden chequear la App para ver el recorrido que voy a estar haciendo.',
+                S.of(context).incidenciaDescription,
           ),
         ],
       ),

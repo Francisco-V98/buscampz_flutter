@@ -341,5 +341,45 @@
   "menuOptionLogoutModalTitle": "Cerrar Sesión",
   "@menuOptionLogoutModalTitle": {
     "description": "localizable of Logout Modal Title"
+  },
+  "freddyRodriguez": "Freddy Rodríguez",
+  "@freddyRodriguez": {
+    "description": "localizable of Freddy Rodríguez"
+  },
+  "colegioSanSebastian": "Colegio San Sebastián de los Altos Campos.",
+  "@colegioSanSebastian": {
+    "description": "localizable of Colegio San Sebastián de los Altos Campos."
+  },
+  "rutaAB32": "Ruta AB32-5",
+  "@rutaAB32": {
+    "description": "localizable of Ruta AB32-5"
+  },
+  "incidenciaDescription": "Hola a todos, tuve un inconveniente con la llanta, la estoy reparando y luego continúo con la ruta. Voy a llegar un poco más tarde de lo acordado. Pueden chequear la App para ver el recorrido que voy a estar haciendo.",
+  "@incidenciaDescription": {
+    "description": "localizable of incidencia description"
+  },
+  "evidenceElevatedButtonScreen": "Pantalla de botón elevado de evidencia",
+  "@evidenceElevatedButtonScreen": {
+    "description": "localizable of Evidence ElevatedButton Screen"
+  },
+  "adjuntarFoto": "Adjuntar Foto",
+  "@adjuntarFoto": {
+    "description": "localizable of Adjuntar Foto"
+  },
+  "enviarEvidencia": "Enviar evidencia",
+  "@enviarEvidencia": {
+    "description": "localizable of Enviar evidencia"
+  },
+  "problemaVehiculo": "Problema en el Vehículo",
+  "@problemaVehiculo": {
+    "description": "localizable of Problema en el Vehículo"
+  },
+  "addressExample": "1901 Thornridge Cir. Shiloh, Hawaii 81063",
+  "@addressExample": {
+    "description": "localizable of address example"
+  },
+  "dateExample": "06:50 A.M - 7:10 A.M",
+  "@dateExample": {
+    "description": "localizable of date example"
   }
 }

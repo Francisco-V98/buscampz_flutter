@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/text_field_incidentes/content/incident_content_text_form.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 
 class RYTIncidentTextField extends StatelessWidget {
   const RYTIncidentTextField({super.key});
@@ -22,7 +22,13 @@ class RYTIncidentTextField extends StatelessWidget {
               const SizedBox(
                 height: 8,
               ),
-              const RYTIncidentContentTextField(),
+              const RYTTextField(
+                hintText: "Elegir...",
+                suffixIcon: Icon(
+                  Icons.keyboard_arrow_down,
+                  color: AppColors.bgBotDark,
+                ),
+              ),
             ],
           ),
         ),

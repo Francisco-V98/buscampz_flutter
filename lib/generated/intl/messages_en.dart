@@ -38,6 +38,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Do you like our app?"),
         "aboutUsReviewAppVersionTitle":
             MessageLookupByLibrary.simpleMessage("App Version"),
+        "addressExample": MessageLookupByLibrary.simpleMessage(
+            "1901 Thornridge Cir. Shiloh, Hawaii 81063"),
+        "attachPhoto": MessageLookupByLibrary.simpleMessage("Attach Photo"),
         "changePasswordButton": MessageLookupByLibrary.simpleMessage("Save"),
         "changePasswordDescriptionLabel": MessageLookupByLibrary.simpleMessage(
             "Enter your new password to make the change."),
@@ -45,6 +48,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("New password"),
         "changePasswordLabel":
             MessageLookupByLibrary.simpleMessage("New password"),
+        "colegioSanSebastian": MessageLookupByLibrary.simpleMessage(
+            "Colegio San Sebastián de los Altos Campos."),
+        "dateExample":
+            MessageLookupByLibrary.simpleMessage("06:50 A.M - 7:10 A.M"),
+        "evidenceElevatedButtonScreen": MessageLookupByLibrary.simpleMessage(
+            "Elevated Button of Evidence Screen"),
         "forgotPasswordButton":
             MessageLookupByLibrary.simpleMessage("Send email"),
         "forgotPasswordDescriptionLabel": MessageLookupByLibrary.simpleMessage(
@@ -55,8 +64,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Reset Password"),
         "frecuentQuestionsLabel":
             MessageLookupByLibrary.simpleMessage("Frequently Asked Questions"),
+        "freddyRodriguez":
+            MessageLookupByLibrary.simpleMessage("Freddy Rodríguez"),
         "greetingUser": MessageLookupByLibrary.simpleMessage("Hi"),
         "homeLabel": MessageLookupByLibrary.simpleMessage("Home"),
+        "incidenciaDescription": MessageLookupByLibrary.simpleMessage(
+            "Hello everyone, I had an issue with the tire, I am repairing it and then I will continue with the route. I will arrive a little later than agreed. You can check the App to see the route I will be taking."),
         "loginButton": MessageLookupByLibrary.simpleMessage("Log in"),
         "loginDontHaveAccountButton":
             MessageLookupByLibrary.simpleMessage("Sign up"),
@@ -145,6 +158,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("terms and conditions"),
         "registerTermsAndConditionsLabel":
             MessageLookupByLibrary.simpleMessage("Accept"),
+        "rutaAB32": MessageLookupByLibrary.simpleMessage("Route AB32-5"),
         "securePasswordOptionMinLetter":
             MessageLookupByLibrary.simpleMessage("8 minimum letters"),
         "securePasswordOptionNumberAndSymbol":
@@ -155,6 +169,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("uppercase and lowercase"),
         "securePasswordOptionWeak":
             MessageLookupByLibrary.simpleMessage("Weak"),
+        "sendEvidence": MessageLookupByLibrary.simpleMessage("Send Evidence"),
         "settingsLabel": MessageLookupByLibrary.simpleMessage("Settings"),
         "supportDescriptionLabel": MessageLookupByLibrary.simpleMessage(
             "For any questions, complaints, or concerns, you can contact us through the following means:"),
@@ -168,6 +183,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Validate code"),
         "validateCodeResentCodeButton":
             MessageLookupByLibrary.simpleMessage("Resend code"),
+        "vehicleProblem":
+            MessageLookupByLibrary.simpleMessage("Vehicle Problem"),
         "vehiclesLabel": MessageLookupByLibrary.simpleMessage("Vehicle")
       };
 }

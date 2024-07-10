@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 
 class DetailIncidentTextFieldExampleScreen extends StatelessWidget {
   const DetailIncidentTextFieldExampleScreen({super.key});
@@ -11,11 +10,19 @@ class DetailIncidentTextFieldExampleScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Detail Incident TextField Screen"),
       ),
-      body: Center(
-        child: Container(
-          color: AppColors.primary,
-          child: const RYTDetailIncidentTextField(),
-        ),
+      body: const Column(
+        children: [
+          Center(
+            child: RYTDetailIncidentText(
+              title: "Detalle de la incidencia",
+            ),
+          ),
+          RYTTextField(
+            hintText: "Escribir...",
+            verticalPadding: 90.0,
+            horizontalPadding: 20.0,
+          ),
+        ],
       ),
     );
   }

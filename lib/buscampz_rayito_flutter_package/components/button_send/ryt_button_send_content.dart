@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
 class RYTButtonSendContent extends StatelessWidget {
+  final Icon icon;
+  final VoidCallback? onPressed;
+
   const RYTButtonSendContent({
     super.key,
+    required this.icon,
+    this.onPressed,
   });
 
   @override
@@ -23,10 +28,8 @@ class RYTButtonSendContent extends StatelessWidget {
         shape: BoxShape.circle,
       ),
       child: IconButton(
-        icon: const Icon(
-          Icons.send,
-        ),
-        onPressed: () {},
+        icon: icon,
+        onPressed: onPressed, 
       ),
     );
   }

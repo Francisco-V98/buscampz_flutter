@@ -872,6 +872,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Freddy Rodríguez`
+  String get freddyRodriguez {
+    return Intl.message(
+      'Freddy Rodríguez',
+      name: 'freddyRodriguez',
+      desc: 'localizable for Freddy Rodríguez',
+      args: [],
+    );
+  }
+
+  /// `Colegio San Sebastián de los Altos Campos.`
+  String get colegioSanSebastian {
+    return Intl.message(
+      'Colegio San Sebastián de los Altos Campos.',
+      name: 'colegioSanSebastian',
+      desc: 'localizable for Colegio San Sebastián de los Altos Campos.',
+      args: [],
+    );
+  }
+
+  /// `Route AB32-5`
+  String get rutaAB32 {
+    return Intl.message(
+      'Route AB32-5',
+      name: 'rutaAB32',
+      desc: 'localizable for Route AB32-5',
+      args: [],
+    );
+  }
+
+  /// `Hello everyone, I had an issue with the tire, I am repairing it and then I will continue with the route. I will arrive a little later than agreed. You can check the App to see the route I will be taking.`
+  String get incidenciaDescription {
+    return Intl.message(
+      'Hello everyone, I had an issue with the tire, I am repairing it and then I will continue with the route. I will arrive a little later than agreed. You can check the App to see the route I will be taking.',
+      name: 'incidenciaDescription',
+      desc: 'localizable for incidence description',
+      args: [],
+    );
+  }
+
+  /// `Elevated Button of Evidence Screen`
+  String get evidenceElevatedButtonScreen {
+    return Intl.message(
+      'Elevated Button of Evidence Screen',
+      name: 'evidenceElevatedButtonScreen',
+      desc: 'localizable for Evidence ElevatedButton Screen',
+      args: [],
+    );
+  }
+
+  /// `Attach Photo`
+  String get attachPhoto {
+    return Intl.message(
+      'Attach Photo',
+      name: 'attachPhoto',
+      desc: 'localizable for Attach Photo',
+      args: [],
+    );
+  }
+
+  /// `Send Evidence`
+  String get sendEvidence {
+    return Intl.message(
+      'Send Evidence',
+      name: 'sendEvidence',
+      desc: 'localizable for Send Evidence',
+      args: [],
+    );
+  }
+
+  /// `Vehicle Problem`
+  String get vehicleProblem {
+    return Intl.message(
+      'Vehicle Problem',
+      name: 'vehicleProblem',
+      desc: 'localizable for Vehicle Problem',
+      args: [],
+    );
+  }
+
+  /// `1901 Thornridge Cir. Shiloh, Hawaii 81063`
+  String get addressExample {
+    return Intl.message(
+      '1901 Thornridge Cir. Shiloh, Hawaii 81063',
+      name: 'addressExample',
+      desc: 'localizable for address example',
+      args: [],
+    );
+  }
+
+  /// `06:50 A.M - 7:10 A.M`
+  String get dateExample {
+    return Intl.message(
+      '06:50 A.M - 7:10 A.M',
+      name: 'dateExample',
+      desc: 'localizable for date example',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

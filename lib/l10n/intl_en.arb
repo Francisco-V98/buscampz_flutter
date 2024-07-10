@@ -1,5 +1,5 @@
 {
-    "_locale": "en",
+    "_locale": "en",  
     "loginLabel": "Log in",
     "@loginLabel": {
       "description": "localizable of Log in"
@@ -341,6 +341,46 @@
   "menuOptionLogoutModalTitle": "Logout",
   "@menuOptionLogoutModalTitle": {
     "description": "localizable of Logout Modal Title"
+  
+  },
+  "freddyRodriguez": "Freddy Rodríguez",
+  "@freddyRodriguez": {
+    "description": "localizable for Freddy Rodríguez"
+  },
+  "colegioSanSebastian": "Colegio San Sebastián de los Altos Campos.",
+  "@colegioSanSebastian": {
+    "description": "localizable for Colegio San Sebastián de los Altos Campos."
+  },
+  "rutaAB32": "Route AB32-5",
+  "@rutaAB32": {
+    "description": "localizable for Route AB32-5"
+  },
+  "incidenciaDescription": "Hello everyone, I had an issue with the tire, I am repairing it and then I will continue with the route. I will arrive a little later than agreed. You can check the App to see the route I will be taking.",
+  "@incidenciaDescription": {
+    "description": "localizable for incidence description"
+  },
+  "evidenceElevatedButtonScreen": "Elevated Button of Evidence Screen",
+  "@evidenceElevatedButtonScreen": {
+    "description": "localizable for Evidence ElevatedButton Screen"
+  },
+  "attachPhoto": "Attach Photo",
+  "@attachPhoto": {
+    "description": "localizable for Attach Photo"
+  },
+  "sendEvidence": "Send Evidence",
+  "@sendEvidence": {
+    "description": "localizable for Send Evidence"
+  },
+  "vehicleProblem": "Vehicle Problem",
+  "@vehicleProblem": {
+    "description": "localizable for Vehicle Problem"
+  },
+  "addressExample": "1901 Thornridge Cir. Shiloh, Hawaii 81063",
+  "@addressExample": {
+    "description": "localizable for address example"
+  },
+  "dateExample": "06:50 A.M - 7:10 A.M",
+  "@dateExample": {
+    "description": "localizable for date example"
   }
 }
-  

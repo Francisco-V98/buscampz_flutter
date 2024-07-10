@@ -1,7 +1,7 @@
 // ignore_for_file: unused_element
 
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/router/routers.dart';
 import 'package:flutter/material.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/router/routers.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'generated/l10n.dart';

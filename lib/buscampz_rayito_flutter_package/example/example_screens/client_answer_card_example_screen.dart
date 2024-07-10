@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 
 class ClientAnswerCardExampleScreen extends StatelessWidget {
   const ClientAnswerCardExampleScreen({super.key});
@@ -16,7 +16,11 @@ class ClientAnswerCardExampleScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Center(
-                child: RYTClientAnswerCard(),
+                child: RYTClientContentAnswerCard(
+                  clientName: "Carmen Pérez",
+                  text: "Ok Gracias estaré atenta al estado de incidencia",
+                  image: "assets/images/image_client_example.png",
+                ),
               ),
             ],
           ),

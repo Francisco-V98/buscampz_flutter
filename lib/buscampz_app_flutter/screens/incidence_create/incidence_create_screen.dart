@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets.dart';
+import 'package:buscampz_flutter/generated/l10n.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevated_button/content/ryt_attach_evidence_button.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevated_button/content/ryt_send_evidence_elevated_button.dart';
 
 class IncidenceCreateScreen extends StatelessWidget {
   const IncidenceCreateScreen({super.key});
@@ -21,35 +20,64 @@ class _Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Column(
         children: [
-          AppBarBuscampz(
+          //TODO: Update to RYT
+          const AppBarBuscampz(
             title: "Incidencias",
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          RYTIncidentTextField(),
-          RYTDetailIncidentTextField(),
-          RYTAttachPhotoButton(
-            color: AppColors.bgBotLight,
-            text: "Adjuntar Foto",
+          const RYTTextField(
+            hintText: "Elegir...",
+            suffixIcon: Icon(
+              Icons.keyboard_arrow_down,
+              color: AppColors.bgBotDark,
+            ),
+          ),
+          const RYTDetailIncidentText(
+            title: "Detalle de la incidencia",
+          ),
+          const RYTTextField(
+            hintText: "Escribir...",
+            verticalPadding: 90.0,
+            horizontalPadding: 20.0,
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          RYTButton(
+            horizontalPadding: 40,
+            text: S.of(context).attachPhoto,
+            backgroundColor: AppColors.bgBotLight,
+            elevation: 0,
+            onPressed: () {
+              //TODO: Action when pressing the button
+            },
           ),
           Center(
-            child: Text(
-              "Cuando se envíe esta incidencia, se le notificará a los representantes e institución. Debes ser lo más explícito posible para entender mejor el inconveniente.",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: AppColors.greyDark
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Text(
+                S.of(context).incidenciaDescription,
+                style: const TextStyle(
+                  color: AppColors.secondary,
+                ),
               ),
             ),
           ),
-          Spacer(),
-          RYTSendEvidenceElevatedButton(
-            text: "Enviar Evidencia",
+
+          const Spacer(),
+          RYTButton(
+            text: S.of(context).sendEvidence,
+            horizontalPadding: 40.0,
+            onPressed: () {
+              //TODO: Action when pressing the button
+            },
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
         ],
