@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/ryt_app_text_style.dart';
 
-class BottomSheetBuscampz extends StatelessWidget {
+class RYTBottomSheet extends StatelessWidget {
   final String? title;
-  const BottomSheetBuscampz({
+  final List<Widget> buttonList;
+  const RYTBottomSheet({
     super.key,
     this.title,
+    this.buttonList = const [],
   });
 
   @override
@@ -38,17 +39,26 @@ class BottomSheetBuscampz extends StatelessWidget {
               ),
             ),
           ),
-          if (title != null)
+          if (title!.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 12),
               child: Text(
-                title!,
-                style: AppTextStyles.sub1_18(AppColors.black),
+                title ?? 'error title',
+                style: RYTAppTextStyles.sub1_18(AppColors.black),
               ),
             ),
-          const Padding(
-            padding: EdgeInsets.symmetric(vertical: 24),
-            child: ButtonGroupBottomSheet(),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 24),
+            child: Column(
+              children: buttonList.isNotEmpty
+                  ? buttonList
+                  : [
+                      Text(
+                        'No buttons available',
+                        style: RYTAppTextStyles.sub1_18(AppColors.black),
+                      ),
+                    ],
+            ),
           ),
         ],
       ),

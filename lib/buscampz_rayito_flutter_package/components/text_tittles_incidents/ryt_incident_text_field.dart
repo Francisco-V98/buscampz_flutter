@@ -17,7 +17,7 @@ class RYTIncidentTextField extends StatelessWidget {
             children: [
               Text(
                 "Tipo de Incidencia",
-                style: AppTextStyles.h4_20(AppColors.black),
+                style: RYTAppTextStyles.h4_20(AppColors.black),
               ),
               const SizedBox(
                 height: 8,

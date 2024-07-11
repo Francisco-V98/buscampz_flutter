@@ -3,8 +3,8 @@ import 'package:buscampz_flutter/generated/l10n.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 
-class IncidenceSectionScreen extends StatelessWidget {
-  const IncidenceSectionScreen({super.key});
+class IncidenceSectionExampleScreen extends StatelessWidget {
+  const IncidenceSectionExampleScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +14,13 @@ class IncidenceSectionScreen extends StatelessWidget {
         centerTitle: true,
         title: const Text('Incidence Section'),
       ),
-      body: const _Body(),
+      body: const _BodyIncidenceSectionExampleScreen(),
     );
   }
 }
 
-class _Body extends StatelessWidget {
-  const _Body();
+class _BodyIncidenceSectionExampleScreen extends StatelessWidget {
+  const _BodyIncidenceSectionExampleScreen();
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class _Body extends StatelessWidget {
             color: AppColors.white,
             child:  Padding(
               padding: EdgeInsets.symmetric(vertical: 24),
-              child: UserDataIncidence(
+              child: RYTUserDataIncidence(
                 image: imageExample,
                 title: S.of(context).freddyRodriguez,
                 address: S.of(context).colegioSanSebastian,
@@ -44,7 +44,7 @@ class _Body extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 24),
-           DetailIncidence(
+          const RYTDetailIncidence(
             description:
                 S.of(context).incidenciaDescription,
           ),
