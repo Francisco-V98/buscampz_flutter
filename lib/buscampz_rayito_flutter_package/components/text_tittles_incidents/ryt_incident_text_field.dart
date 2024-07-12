@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/ryt_app_text_style.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/app_text_style.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 
 class RYTIncidentTextField extends StatelessWidget {

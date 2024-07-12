@@ -1,8 +1,9 @@
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/elevated_button/ryt_elevated_button.dart';
+import 'package:buscampz_flutter/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/text_style/ryt_app_text_style.dart';
 //TODO: jesus has to add this import to the barrel file
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets/elevatedButtonEvidencia/content/send_evidence_elevated_button.dart';
 
 class RYTDetailIncidence extends StatelessWidget {
   final String? description;
@@ -41,7 +42,13 @@ class RYTDetailIncidence extends StatelessWidget {
             ),
             //TODO: Waiting for Jesus to add the parameters to the button
             withBottomImage
-                ? const SendEvidenceElevatedButton()
+                ? RYTButton(
+                    text: S.of(context).sendEvidence,
+                    horizontalPadding: 40.0,
+                    onPressed: () {
+                      //TODO: Action when pressing the button
+                    },
+                  )
                 : const SizedBox.shrink(),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 4),

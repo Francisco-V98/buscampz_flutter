@@ -1,3 +1,4 @@
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/appbar/ryt_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/generated/l10n.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
@@ -24,7 +25,7 @@ class _Body extends StatelessWidget {
       child: Column(
         children: [
           //TODO: Update to RYT
-          const AppBarBuscampz(
+          const RYTAppBar(
             title: "Incidencias",
           ),
           const SizedBox(

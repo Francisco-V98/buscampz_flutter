@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/generated/l10n.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example/providers/providers.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/example_screen/providers/dark_mode_provider.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets_exports.dart';
 
 class CardIncidenceListScreen extends ConsumerWidget {
   const CardIncidenceListScreen({super.key});
@@ -35,7 +35,7 @@ class _Body extends ConsumerWidget {
       padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
       child: Column(
         children: [
-          CardIncidenceList(
+          RYTCardIncidenceList(
             title: S.of(context).vehicleProblem,
             address: S.of(context).addressExample,
             date: S.of(context).dateExample,

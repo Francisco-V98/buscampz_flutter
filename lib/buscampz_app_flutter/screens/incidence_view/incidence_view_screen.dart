@@ -1,76 +1,79 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/generated/l10n.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:buscampz_flutter/provider/incidence_provider.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets_exports.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
-class IncidenceViewScreen extends StatelessWidget {
+class IncidenceViewScreen extends ConsumerWidget {
   const IncidenceViewScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
+  Widget build(BuildContext context, WidgetRef ref) {
+    final incidenceState = ref.watch(incidenceProvider);
+
+    return Scaffold(
       backgroundColor: AppColors.bgBotLight,
-      body: _Body(),
+      body: incidenceState.isLoading
+          ? const Center(child: CircularProgressIndicator())
+          : incidenceState.incidenceModel == null
+              ? const Center(child: Text('No data available'))
+              : _Body(incidenceState: incidenceState),
     );
   }
 }
 
 class _Body extends StatelessWidget {
-  const _Body();
+  final IncidenceState incidenceState;
+
+  const _Body({required this.incidenceState});
 
   @override
   Widget build(BuildContext context) {
+    final incidence = incidenceState.incidenceModel!;
+
     return SafeArea(
       child: Column(
         children: [
-          //TODO: Update to RYT
-          const AppBarBuscampz(
+          const RYTAppBar(
             title: "Incidencias",
           ),
-          //TODO: Update to RYT
-          //TODO: Update provider
-          UserDataIncidence(
-            image: "",
-            title: S.of(context).freddyRodriguez,
+          RYTUserDataIncidence(
+            image: incidence.data.driver.profilePicture,
+            title:
+                "${incidence.data.driver.firstName} ${incidence.data.driver.lastName}",
             address: S.of(context).colegioSanSebastian,
-            route: S.of(context).rutaAB32,
+            route: incidence.data.routeHistory.shift,
           ),
-          //TODO: Update to RYT
-          //TODO: Update provider
-          const DetailIncidence(
-            //TODO: Implement i10n to all of the texts
-            description:
-                'Hola a todos, tuve un inconveniente con la llanta, la estoy reparando y luego continúo con la ruta. Voy a llegar un poco más tarde de lo acordado. Pueden chequear la App para ver el recorrido que voy a estar haciendo.',
+          RYTDetailIncidence(
+            description: incidence.data.message,
           ),
-          const RYTClientContentAnswerCard(
-            //TODO: Implement i10n to all of the texts
-            clientName: "Selena Hernández",
-            text: "Ok señor Freddye, estoy atento para bajar y buscar a daniel",
-            image: "assets/images/image_client_example.png",
-          ),
-          const Divider(),
-          const RYTClientContentAnswerCard(
-            //TODO: Implement i10n to all of the texts
-            clientName: "Carmen Pérez",
-            text: "Ok Gracias estaré atenta al estado de incidencia",
-            image: "assets/images/image_client_example.png",
-          ),
-          const Divider(),
-          const RYTClientContentAnswerCard(
-            //TODO: Implement i10n to all of the texts
-            clientName: "Maria Tovar",
-            text:
-                "En el nombre de Dios que se solucione rápido esta incidencia, estaré antenta",
-            image: "assets/images/image_client_example.png",
-          ),
-          const Divider(),
+            RYTClientContentAnswerCard(
+              clientName: incidence.data.driver.lastName,
+              text: incidence.data.message,
+              image: incidence.data.driver.profilePicture, 
+            ),
+            const Divider(),
+            RYTClientContentAnswerCard(
+              clientName: incidence.data.driver.lastName,
+              text: incidence.data.message,
+              image: incidence.data.driver.profilePicture, 
+            ),
+            const Divider(),
+            RYTClientContentAnswerCard(
+              clientName: incidence.data.driver.lastName,
+              text: incidence.data.message,
+              image: incidence.data.driver.profilePicture, 
+            ),
+            const Divider(),
+          
           const Spacer(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const RYTTextField(
                 width: 289,
-                //TODO: Implement i10n to all of the texts
                 hintText: "Escribir...",
               ),
               RYTButtonSendContent(

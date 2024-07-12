@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/appbar/ryt_app_bar.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
 
 class AppbarExampleScreen extends StatelessWidget {

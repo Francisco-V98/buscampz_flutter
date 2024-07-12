@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:buscampz_flutter/generated/l10n.dart';
+import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widgets_exports.dart';
 import 'package:buscampz_flutter/buscampz_rayito_flutter_package/config/colors/app_colors.dart';
-import 'package:buscampz_flutter/buscampz_rayito_flutter_package/components/widget_exports.dart';
 
 class IncidenceSectionExampleScreen extends StatelessWidget {
   const IncidenceSectionExampleScreen({super.key});
@@ -26,15 +26,15 @@ class _BodyIncidenceSectionExampleScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     const imageExample =
         'https://doc.cerp.ideria.co/assets/images/image-a5238aed7050a0691758858b2569566d.jpg';
-    
+
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 24),
       child: Column(
         children: [
           Container(
             color: AppColors.white,
-            child:  Padding(
-              padding: EdgeInsets.symmetric(vertical: 24),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 24),
               child: RYTUserDataIncidence(
                 image: imageExample,
                 title: S.of(context).freddyRodriguez,
@@ -44,9 +44,8 @@ class _BodyIncidenceSectionExampleScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 24),
-          const RYTDetailIncidence(
-            description:
-                S.of(context).incidenciaDescription,
+          RYTDetailIncidence(
+            description: S.of(context).incidenciaDescription,
           ),
         ],
       ),
